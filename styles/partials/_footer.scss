@@ -1,0 +1,18 @@
+footer {
+    z-index: 30;
+    @include flexBox();
+    color: $lightColour;
+    font-size: 1.3rem;
+    position: relative;
+    background: $accentColour3;
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fa-smile {
+        color: $lightColour;
+        display: inline-block;
+    }
+}

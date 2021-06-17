@@ -1,0 +1,8 @@
+#about {
+    background-color: $lightColour;
+
+    h2:before {
+        content: '\f118';
+        color: $accentColour3;
+    }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- Test du site sans le premiere cinq asset files et site.webmanifest-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5154e8">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/b6806e145d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Major+Mono+Display" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Alan Rich, Front End Developer</title>
+</head>
+<body>
+    <a class="skipLink" href="#about">Skip to main content</a>
+    <button class="navToggle"><i class="fas fa-ellipsis-v"></i></button>
+    <nav class="rounded">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i>home</a></li>
+            <li><a href="#about"><i class="far fa-smile"></i>about</a></li>
+            <!--<li> <a href="#work"><i class="fas"></i>work</a> </li>-->
+            <li><a href="#skills"><i class="fas fa-hammer"></i>skills</a></li>
+            <li><a href="#contact"><i class="far fa-envelope"></i>contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <img class="grid" src="./assets/grid1.svg" alt="" aria-hidden="true">
+        <img class="wave1" src="./assets/wave1.svg" alt="" aria-hidden="true">
+
+        <div class="wrapper">
+            <h1 id='headerH1'>Alan Rich</h1>
+
+            <p>Front End Developer</p>
+
+            <ul class="social">
+                <li><a href="https://github.com/alanrich-dev" title="GitHub" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alanrich-dev/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="" title="Twitter" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+
+            <a class="rounded contactBtn" href="#contact">Say hello!</a>
+
+        </div>
+
+        <img class="wave" src="./assets/wave.svg" alt="" aria-hidden="true">
+        <img class="dots" src="./assets/dotGridNine.svg" alt="" aria-hidden="true">
+    </header>
+
+    <section id="about">
+
+        <div class="wrapper">
+            <h2>Hello, I'm Alan</h2>
+
+            <p>I'm a skilled front end developer. I have experience converting PSDs and client ideas into pixel perfect web pages. I take pride in improving development processes, tooling, and documentation for those I collaborate with.</p>
+            <p>Writing neat, scalable, and modular code is important to me. I care deeply that all users can easily interact with sites and applications I touch and that my colleagues can easily pick up code I write.</p>
+            <p>I'm interested in expanding my tech stack and am currently getting acquainted with Gatsby and GraphQL</p>
+    
+        </div>
+    </section>
+<!--**************************************************************************************************************************************************************************************************-->
+    <section id="work">
+        <img class="wave2" src="./assets/wave.svg" alt="" aria-hidden="true">
+
+        <div class="wrapper">
+            <!-- they're like building blocks but honestly i also just love cubes -->
+            <i class="outside fas fa-cubes"></i>
+
+            <h2>Here's what I've made</h2>
+
+            <div class="project project1">
+
+                <div class="half left">
+                    <!-- Laptop by Valeriy from the Noun Project -->
+                    <img class="screenshot" src="./assets/louisekerrad.png" alt="Screenshot of Weather Wadrobe on desktop.">
+                </div>
+
+                <div class="half right captions">
+                    <h3>LouiseKerrad.com</h3>
+
+                    <div class="tools">Sass | HTML5 | Javascript </div>
+
+                    <div class="description">A website illustrating my web design skills. Styled with Sass to ensure uniformity in spacing, margins and all other relevant styling metrics.</div>
+
+                    <div class="projLinks">
+                        <a href="http://louisekerrad.com" target="_blank">Live</a>
+                        <a href="https://github.com/alanrich-dev/kids-webpage" target="_blank">GitHub</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project project2">
+
+                <div class="half right">
+                    <img class="screenshot" src="./assets/tttFinal.png" alt="Screenshot of Toronto Tattoo Tinder on desktop.">
+
+                </div>
+
+                <div class="half left captions">
+                    <h3>Toronto Tattoo Tinder</h3>
+
+                    <div class="tools"> Sass | HTML5 </div>
+
+                    <div class="description">Pixel-perfect and fully responsive PSD conversion.</div>
+
+                    <div class="projLinks">
+                        <a href="https://alanrich-dev.github.io/business-site/" target="_blank">Live</a>
+                        <a href="https://github.com/alanrich-dev/business-site" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project project3" style='display:none'>
+                <div class="half left">
+                    <img class="screenshot" src="./assets/summitFinal.png" alt="Screenshot of Summit on desktop.">
+
+                </div>
+
+                <div class="half right captions">
+                    <h3>Tic Tac Toe with AI </h3>
+
+                    <div class="tools">Floats | Zeppelin PSD tool</div>
+
+                    <!-- add in functional hamburger navToggle!!! -->
+                    <div class="description">Pixel-perfect and fully responsive PSD conversion.</div>
+
+                    <div class="projLinks">
+                        <a href="http://clairevalant.com/summit/" target="_blank">Live</a>
+                        <a href="https://github.com/clairevalant/claire_valant_project1" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project project4" style='display:none'>
+
+                <div class="half right">
+                    <img class="screenshot" src="./assets/versusFinal.png" alt="Screenshot of Versus on desktop.">
+                </div>
+
+                <div class="half left captions">
+                    <h3>Versus</h3>
+
+                    <div class="tools">React | Goodreads API | React-Chart-js </div>
+
+                    <div class="description">Versus was a group collaboration with Sam Sakhavarz and Mikey Couture. We used the Goodreads API to filter through returned works by a chosen author to display stats on their works over the years.</div>
+
+                    <div class="projLinks">
+                        <a href="https://versvs-2385d.firebaseapp.com/" target="_blank">Live</a>
+                        <a href="https://github.com/clairevalant/when-you-peaked" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--**************************************************************************************************************************************************************************************************-->
+    <section id="skills">
+
+        <div class="wrapper">
+            <h2>Here's what I've used</h2>
+
+            <div class="rounded iconContainer">
+
+                <div class="skill">
+                    <i class="fab fa-js-square" title="JavaScript"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react" title="React"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fab fa-css3-alt" title="CSS3"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fab fa-sass"></i>
+                    <span>Sass</span>
+                </div>
+
+                <div class="skill">
+                    <img src="/assets/firebase.svg" alt="Firebase" title="Firebase">
+                    <span>Firebase</span>
+                </div>
+
+                <div class="skill">
+                    <img src="/assets/webpackIcon.svg" alt="" title="Webpack">
+                    <span>Webpack</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-npm" title="NPM"></i>
+                    <span>npm</span>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-git-plain" title="Git"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fab fa-aws" title="AWS"></i>
+                    <span>AWS</span>
+                </div>
+
+            </div>
+
+            <p>Plus some others:</p>
+            <ul>
+                <li>REST APIs</li>
+                <li>Responsive design</li>
+                <li>Linux</li>
+            </ul>
+
+            <a class="resume rounded" target="_blank" href="/hireme.pdf">Check out my resume for more!</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <img class="wave2" src="./assets/wave.svg" alt="" aria-hidden="true">
+
+        <div class="wrapper">
+            <h2>How do you do?</h2>
+
+            <p>Please do get in touch! Email me at <a href="mailto:alan@alanrich.dev">alan@alanrich.dev</a> or right here:</p>
+
+            <form action="https://formspree.io/alan@alanrich.dev" method="POST">
+                <div class="oneLine">
+                    <label for="name" class="visuallyhidden">Name</label>
+                    <input class="rounded" type="text" id="name" name="name" placeholder="name" required>
+                    <label for="email" class="visuallyhidden">Email address</label>
+                    <input class="rounded" type="email" id="email" name="name" placeholder="email address" required>
+                </div>
+
+                <label for="message" class="visuallyhidden">Message</label>
+                <textarea class="rounded" type="text" id="message" name="message" cols="30" rows="10" placeholder="hey, Alan!" required></textarea>
+                <input class="rounded" type="submit" value="send message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p><i class="far fa-copyright"></i> Alan Rich 2020 - 2021 <i class="far fa-smile"></i></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

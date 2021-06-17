@@ -1,0 +1,95 @@
+header {
+    background-color: $accentColour1;
+    height: 100vh;
+    color: $lightColour;
+    text-align: center;
+
+    .grid {
+        height: 28vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .wave1 {
+        position: absolute;
+        width: 180px;
+        top: 0;
+        right: 60px;
+        display: none;
+    }
+
+    .dots {
+        width: 33vw;
+        max-width: 230px;
+        position: absolute;
+        bottom: 0;
+        right: 6px;
+        z-index: 30;
+    }
+
+    .wave {
+        transform: rotate(90deg) translateX(19%);
+        width: 40vw;
+        max-width: 250px;
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        z-index: 8;
+    }
+
+    .wrapper {
+        z-index: 0;
+        @include flexBox(column, center, center);
+    }
+
+    p,
+    ul {
+        margin: 0 0 10px;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    p,
+    a {
+        font-weight: 600;
+    }
+
+    .contactBtn {
+        color:$accentColour1;
+        background: $lightColour;
+        border: 2px solid $accentColour;
+        
+        &:hover,
+        &:focus {
+            background:$accentColour2;
+        }
+    }
+
+    .social {
+        z-index: 10;
+        width: 210px;
+        @include flexBox(row, space-between, center);
+
+        a {
+            color: $lightColour;
+            font-size: 3rem;
+            transition: color 0.5s;
+
+            &:hover,
+            &:focus {
+            color: $accentColour2;
+            }
+        }
+    }   
+}   
+
+ h1 {
+        margin: 0;
+        z-index: 10;
+        font-size: 4.5rem;
+        color: $accentColour2;
+        font-family: $titleFont;
+    }

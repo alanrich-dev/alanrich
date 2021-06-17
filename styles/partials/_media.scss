@@ -1,0 +1,274 @@
+@media only screen and (min-width: 400px) {
+    .navToggle {
+        right: 2.5vw;
+    }
+
+    nav {
+        right: 90px;
+    }
+
+    // make skill icons display evenly
+    #skills .iconContainer {
+        padding: 30px;
+
+        i {
+            font-size: 2rem;
+        }
+
+        img {
+            height: 1.7rem;
+        }
+    }
+}
+
+@media only screen and (min-height: 660px) {
+    header .wrapper {
+          margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    header {
+         p {
+            font-size: 3rem;
+        }
+
+        .wave {
+            width: 30vw;
+        }
+
+        .wave1{
+            width: 260px;
+            right: 100px;
+            display: block;
+        }
+
+        .dots {
+            width: 20vw;
+        }
+
+        .wrapper {
+            position: fixed;
+        }
+    }
+
+    .skill {
+          &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #skills .iconContainer{
+        width: auto;
+        padding: 30px 10px;
+        @include flexBox();
+        flex-wrap: wrap;
+
+        i {
+            font-size: 5rem;
+        }
+
+        img {
+            height: 4.7rem;
+        }
+
+        i,
+        img {
+            margin-right: 0;
+        }
+
+        .skill {
+            @include flexBox(column, center, center);
+            margin: 5px;
+            width: calc((100% / 4) - 10px);
+
+            // there were thirteen skills so to make a nice grid, get rid of one:
+            &:last-of-type {
+                display: none;
+            }
+        }
+    }
+
+    input {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    nav {
+    font-size: 2rem;
+    max-height: 280px;
+    }
+
+    header .grid {
+        height: 49vh;
+        top: -50px;
+        left: -50px;
+
+    }
+
+    #skills .iconContainer{
+        i {
+            font-size: 7rem;
+        }
+
+        img {
+            height: 6.7rem;
+        }
+    }
+
+    .oneLine {
+        @include flexBox(row, space-between, center);
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+
+        #name,
+        #email {
+            width: calc(50% - 5px);
+            display: inline-block;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .navToggle {
+        right: 2.5vw;
+    }
+
+    #skills .iconContainer {
+        width: 100%;
+
+        .skill {
+            margin: 10px 5px;
+            width: calc((100% / 6) - 10px);
+        }
+    }
+
+    .wave2 {
+        width: 220px;
+        top: -110px;
+        right: 67px;
+    }
+    
+    #work {
+
+        .project {
+            padding: 50px 0;
+            @include flexBox(row, space-between, flex-start);
+        }
+
+        .project4 {
+            padding-bottom: 0;
+        }
+
+        .half {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .left.half.captions {
+            text-align: right;
+            @include flexBox(column, flex-start, flex-end);
+
+            .projLinks {
+                justify-content: flex-end;
+            }
+        }
+
+        .captions {
+            margin-top: 0;
+            height: 45.8vh;
+            // position: relative;
+        }
+
+        .projLinks {
+            justify-content: flex-start;
+        }
+
+        .captions.left {
+            margin-right: 30px;
+        }
+
+        .captions.right {
+            margin-left: 30px;
+        }
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    nav {
+        right: 120px;
+    }
+
+    header {
+        .wave1{
+            right: 200px;
+        }
+
+        .wave {
+            width: 250px;
+            left: 10vw;
+        }
+    }
+}
+
+@media only screen and (max-height: 560px) and (max-width: 620px) {
+    header .wave1 {
+        display: none;
+    }
+}
+
+// Height media queries
+@media only screen and (min-height: 570px) {
+    header .grid {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    header {
+        .wave {
+            width: 35vw;
+        }
+
+        .dots {
+            width: 26vw;
+        }
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    header {
+        .wave {
+            width: 30vw;
+            // bottom: -18vh;
+        }
+
+        .dots {
+            display: none;
+        }
+    }
+}
