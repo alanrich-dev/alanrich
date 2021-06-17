@@ -9,7 +9,7 @@ myApp.nav = () => {
     const $nav = $("nav");
     const $navToggle = $(".navToggle");
 
-    // fn to remove event listener from document: we only need it hwen the nav is open
+    // remove event listener from document: we only need it when the nav is open
     const removeClickListener = () => {
         document.removeEventListener('click', outsideClickListener)
     }

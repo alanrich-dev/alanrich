@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- Test du site sans le premiere cinq asset files et site.webmanifest-->
+<!-- check for any 3rd party libraries included in the code but not bundled with webpack -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Major+Mono+Display" rel="stylesheet">
+    <!-- if I remove the styles/styles.css link the css breaks-->
+    <!-- webpack is not bundling my css -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./dist/main.css">
     <title>Alan Rich, Front End Developer</title>
 </head>
 <body>
@@ -63,7 +67,7 @@
             <p>I'm a skilled front end developer. I have experience converting PSDs and client ideas into pixel perfect web pages. I take pride in improving development processes, tooling, and documentation for those I collaborate with.</p>
             <p>Writing neat, scalable, and modular code is important to me. I care deeply that all users can easily interact with sites and applications I touch and that my colleagues can easily pick up code I write.</p>
             <p>I'm interested in expanding my tech stack and am currently getting acquainted with Gatsby and GraphQL</p>
-    
+
         </div>
     </section>
 <!--**************************************************************************************************************************************************************************************************-->
@@ -71,7 +75,7 @@
         <img class="wave2" src="./assets/wave.svg" alt="" aria-hidden="true">
 
         <div class="wrapper">
-            <!-- they're like building blocks but honestly i also just love cubes -->
+            <!-- they're like building blocks but cube sounds cooler -->
             <i class="outside fas fa-cubes"></i>
 
             <h2>Here's what I've made</h2>
@@ -79,7 +83,7 @@
             <div class="project project1">
 
                 <div class="half left">
-                    <!-- Laptop by Valeriy from the Noun Project -->
+                    <!--  -->
                     <img class="screenshot" src="./assets/louisekerrad.png" alt="Screenshot of Weather Wadrobe on desktop.">
                 </div>
 
@@ -107,7 +111,7 @@
                 </div>
 
                 <div class="half left captions">
-                    <h3>Toronto Tattoo Tinder</h3>
+                    <h3></h3>
 
                     <div class="tools"> Sass | HTML5 </div>
 
@@ -142,25 +146,6 @@
                 </div>
             </div>
 
-            <div class="project project4" style='display:none'>
-
-                <div class="half right">
-                    <img class="screenshot" src="./assets/versusFinal.png" alt="Screenshot of Versus on desktop.">
-                </div>
-
-                <div class="half left captions">
-                    <h3>Versus</h3>
-
-                    <div class="tools">React | Goodreads API | React-Chart-js </div>
-
-                    <div class="description">Versus was a group collaboration with Sam Sakhavarz and Mikey Couture. We used the Goodreads API to filter through returned works by a chosen author to display stats on their works over the years.</div>
-
-                    <div class="projLinks">
-                        <a href="https://versvs-2385d.firebaseapp.com/" target="_blank">Live</a>
-                        <a href="https://github.com/clairevalant/when-you-peaked" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 <!--**************************************************************************************************************************************************************************************************-->
@@ -193,6 +178,10 @@
                     <i class="fab fa-sass"></i>
                     <span>Sass</span>
                 </div>
+                <!--
+
+                  ***webpack not loading SVGs***
+                  ***not immediate concern***
 
                 <div class="skill">
                     <img src="/assets/firebase.svg" alt="Firebase" title="Firebase">
@@ -203,6 +192,7 @@
                     <img src="/assets/webpackIcon.svg" alt="" title="Webpack">
                     <span>Webpack</span>
                 </div>
+                -->
                 <div class="skill">
                     <i class="fab fa-npm" title="NPM"></i>
                     <span>npm</span>
@@ -222,6 +212,8 @@
 
             <p>Plus some others:</p>
             <ul>
+                <li>Webpack</li>
+                <li>Firebase</li>
                 <li>REST APIs</li>
                 <li>Responsive design</li>
                 <li>Linux</li>
@@ -261,5 +253,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="./dist/bundle.js"></script>
+
 </body>
 </html>
