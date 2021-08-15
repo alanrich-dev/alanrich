@@ -1,3 +1,6 @@
+*{
+  border:solid 1px red;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -454,7 +457,7 @@ footer {
 }
 
 #work {
-  display: none;
+  display: block;
 }
 
 .rounded {
@@ -517,8 +520,10 @@ h2:before {
 }
 
 #work {
-  border-bottom: 11px dotted #faf9f4;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #work .fa-cubes {
@@ -876,7 +881,7 @@ footer .fa-smile {
     width: 20vw;
   }
   header .wrapper {
-    position: fixed;
+    position: relative;
   }
   .skill:hover {
     -webkit-transform: scale(1.2);
