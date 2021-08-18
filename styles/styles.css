@@ -534,6 +534,7 @@ h2:before {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  transform: scale(1.25)
 }
 
 h3 {
