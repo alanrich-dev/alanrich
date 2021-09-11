@@ -521,6 +521,7 @@ h2:before {
   position: relative;
   display: flex;
   flex-direction: column;
+  display:none;
   justify-content: center;
   color:white;
 
