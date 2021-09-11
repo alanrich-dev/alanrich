@@ -885,7 +885,7 @@ footer .fa-smile {
     width: 20vw;
   }
   header .wrapper {
-    position: relative;
+    position: fixed;
   }
   .skill:hover {
     -webkit-transform: scale(1.2);
