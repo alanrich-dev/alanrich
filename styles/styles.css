@@ -272,7 +272,7 @@ nav a {
   font-weight: 700;
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 7px 55px 7px 7px;
   position: relative;
 }
@@ -358,7 +358,7 @@ header .contactBtn:focus {
 
 header .social {
   z-index: 10;
-  width: 210px;
+  width: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +478,8 @@ section a:focus {
 }
 
 .wrapper {
+  background:white;
+  color:#06073f;
   width: 80vw;
   max-width: 1200px;
 }
