@@ -391,7 +391,7 @@ h1 {
   z-index: 10;
   font-size: 4.5rem;
   color: white;
-  font-family: "Major Mono Display", monospace;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -494,13 +494,12 @@ h2 {
   font-size: 2rem;
   margin: 20px 0;
   font-weight: 600;
-  font-family: "Major Mono Display", monospace;
-}
+  font-family: 'Inter', sans-serif;
 
 h2:before {
   font-weight: 400;
   margin-right: 20px;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Inter', sans-serif;
 }
 
 #about {
