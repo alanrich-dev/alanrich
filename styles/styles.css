@@ -463,7 +463,7 @@ footer {
 
 section {
   position: relative;
- /* padding: 30px 0 60px 0;*/
+ padding: 30px 0 60px 0;
 }
 
 section a {
@@ -499,22 +499,23 @@ h2 {
   font-weight: 600;
   font-family: 'Inter', sans-serif;
 }
+/*
 h2:before {
   font-weight: 400;
   margin-right: 20px;
   font-family: 'Inter', sans-serif;
 }
-
+*/
 #about {
   background-color: white;
   color:#2f0452;
 }
-
+/*
 #about h2:before {
   content: "\f118";
   color:#2f0452;
 }
-
+*/
 h3 {
   margin-top: 0;
 }
@@ -539,12 +540,12 @@ h3 {
 #contact {
   background-color: #06073f;
 }
-
+/*
 #contact h2:before {
   content: "\f0e0";
   color: #06073f;
 }
-
+*/
 form {
   display: -webkit-box;
   display: -ms-flexbox;
