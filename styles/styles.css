@@ -200,7 +200,7 @@ input::-moz-focus-inner {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  margin: 5px;
   border: 0;
   padding: 0;
   -webkit-clip-path: inset(100%);
@@ -376,6 +376,7 @@ header .social {
 
 header .social a {
   color: white;
+  padding:1rem
   font-size: 3rem;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -397,7 +398,7 @@ h1 {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background: #06073f;
+  /*background: transparent;*/
 }
 
 body {
@@ -406,7 +407,6 @@ body {
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
   font-family: 'Inter', sans-serif;
-  font-family: 'Times New Roman', serif;
 }
 
 body,
@@ -504,12 +504,13 @@ h2:before {
 }
 
 #about {
-  background-color: #435e86;
+  background-color: white;
+  color:#2f0452;
 }
 
 #about h2:before {
   content: "\f118";
-  color: white;
+  color:#2f0452;
 }
 
 h3 {
@@ -721,6 +722,7 @@ footer .fa-smile {
   }
 
   .oneLine {
+    padding:5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
