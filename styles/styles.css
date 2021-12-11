@@ -1,6 +1,10 @@
 #largePipe{
   font-size: 69;
 }
+#gettingLazy{
+  font: weight 300px;
+  font-size: ;
+}
 #colorMeSpecial{
   color:white
 }
@@ -38,6 +42,8 @@ audio:not([controls]) {
 }
 
 html {
+  background: #06073f;
+  font-size:10px;
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -403,13 +409,6 @@ h1 {
   color: white;
   font-family: 'Inter', sans-serif;
 }
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  background: #06073f;
-}
-
 body {
   font-weight: 300;
   color: white;
@@ -509,23 +508,10 @@ h2 {
   font-weight: 900;
   font-family: 'Inter', sans-serif;
 }
-/*
-h2:before {
-  font-weight: 400;
-  margin-right: 20px;
-  font-family: 'Inter', sans-serif;
-}
-*/
 #about {
   background-color: white;
   color:#2f0452;
 }
-/*
-#about h2:before {
-  content: "\f118";
-  color:#2f0452;
-}
-*/
 h3 {
   margin-top: 0;
 }
@@ -550,12 +536,6 @@ h3 {
 #contact {
   background-color:white;
 }
-/*
-#contact h2:before {
-  content: "\f0e0";
-  color: #06073f;
-}
-*/
 form {
   display: -webkit-box;
   display: -ms-flexbox;
