@@ -407,7 +407,7 @@ h1 {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background: transparent;
+  background: #06073f;
 }
 
 body {
@@ -505,7 +505,7 @@ ul li {
 
 h2 {
   font-size: 3rem;
-  margin: 10px 0;
+  margin: 8px 0;
   font-weight: 900;
   font-family: 'Inter', sans-serif;
 }
