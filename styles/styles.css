@@ -211,7 +211,7 @@ input::-moz-focus-inner {
 
 .navToggle {
   z-index: 40;
-  color: white;
+  color: greenyellow;
   background: transparent;
   border: none;
   font-size: 5rem;
