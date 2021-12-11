@@ -376,7 +376,7 @@ header .social {
 
 header .social a {
   color: white;
-  padding:1rem
+  padding:1rem;
   font-size: 3rem;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -661,11 +661,6 @@ footer {
 footer p {
   width: 100%;
   text-align: center;
-}
-
-footer .fa-smile {
-  color: white;
-  display: inline-block;
 }
 
 @media only screen and (min-width: 400px) {
