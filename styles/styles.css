@@ -478,8 +478,8 @@ section a:focus {
 }
 
 .wrapper {
-  background:white;
-  color:#06073f;
+  color:white;
+  background:#06073f;
   width: 80vw;
   max-width: 1200px;
 }
