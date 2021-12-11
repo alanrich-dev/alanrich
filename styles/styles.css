@@ -648,6 +648,7 @@ footer {
   font-size: 1.3rem;
   position: relative;
   background: #06073f;
+  min-height: 200px;
 }
 
 footer p {
