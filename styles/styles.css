@@ -463,7 +463,7 @@ footer {
 
 section {
   position: relative;
-  padding: 30px 0 60px 0;
+ /* padding: 30px 0 60px 0;*/
 }
 
 section a {
@@ -520,7 +520,7 @@ h3 {
 .resume {
   left: 50%;
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 10px;
   position: relative;
   border: 1px solid white;
   display: inline-block;
@@ -678,7 +678,7 @@ footer .fa-smile {
 
 @media only screen and (min-height: 660px) {
   header .wrapper {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
