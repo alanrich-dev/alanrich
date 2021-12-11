@@ -467,14 +467,14 @@ section {
 }
 
 section a {
-  color: white;
+  color:#06073f;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 section a:hover,
 section a:focus {
-  color: white;
+  color: #06073f;
 }
 
 .wrapper {
@@ -498,7 +498,7 @@ h2 {
   margin: 20px 0;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
-
+}
 h2:before {
   font-weight: 400;
   margin-right: 20px;
