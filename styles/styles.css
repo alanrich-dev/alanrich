@@ -530,7 +530,7 @@ h3 {
 }
 
 .resume:hover .resume:focus {
-  color: #5154e8;
+  color: white
   background-color: #2f0452;
 }
 
@@ -581,7 +581,7 @@ textarea {
   border: none;
   width: 100%;
   margin: 5px 0;
-  padding: 10px;
+  padding: 5px;
 }
 
 input#name,
@@ -622,7 +622,7 @@ input[type="submit"],
 textarea[type="submit"] {
   width: auto;
   background-color: white;
-  color: #5154e8;
+  color: #06073f;
   border: 2px solid #06073f;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
