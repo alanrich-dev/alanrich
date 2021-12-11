@@ -54,7 +54,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 4em;
 }
 
 abbr[title] {
@@ -345,7 +345,9 @@ header p {
   font-size: 1.8rem;
   margin: 0 0 10px
 }
-
+.social {
+  margin: 0 0 10px
+}
 header p,
 header a {
   font-weight: 600;
@@ -354,7 +356,7 @@ header a {
 header .contactBtn {
   color: white;
   background: #06073f;
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 header .contactBtn:hover,
@@ -502,9 +504,9 @@ ul li {
 }
 
 h2 {
-  font-size: 2rem;
-  margin: 20px 0;
-  font-weight: 600;
+  font-size: 3rem;
+  margin: 10px 0;
+  font-weight: 900;
   font-family: 'Inter', sans-serif;
 }
 /*
