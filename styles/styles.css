@@ -29,7 +29,7 @@ audio:not([controls]) {
 
 html {
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -53,7 +53,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 dfn {
@@ -69,7 +69,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1em;
 }
 
@@ -211,7 +211,7 @@ input::-moz-focus-inner {
 
 .navToggle {
   z-index: 40;
-  color: #06073f;
+  color: white;
   background: transparent;
   border: none;
   font-size: 5rem;
@@ -368,7 +368,7 @@ header .social {
   flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -405,6 +405,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Times New Roman', serif;
 }
 
 body,
@@ -415,7 +417,6 @@ html {
 .skipLink {
   left: -100vw;
   position: absolute;
-  
   color: white;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
@@ -503,7 +504,7 @@ h2:before {
 }
 
 #about {
-  background-color: #06073f;
+  background-color: #435e86;
 }
 
 #about h2:before {
@@ -518,18 +519,18 @@ h3 {
 .resume {
   left: 50%;
   padding: 15px;
-  margin-top: 60px;
+  margin-top: 30px;
   position: relative;
   border: 1px solid white;
   display: inline-block;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #06073f;
+  background-color: #2f0452;
 }
 
 .resume:hover .resume:focus {
   color: #5154e8;
-  background-color: #06073f;
+  background-color: #2f0452;
 }
 
 #contact {
