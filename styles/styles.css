@@ -211,7 +211,7 @@ input::-moz-focus-inner {
   width: 1px;
   height: 1px;
   margin: 5px;
-  border: 0;
+  border: 1px;
   padding: 0;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
