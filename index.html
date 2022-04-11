@@ -39,6 +39,12 @@
       href="https://fonts.googleapis.com/css?family=Montserrat|Major+Mono+Display"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/b6806e145d.js"
@@ -64,45 +70,42 @@
     <nav class="rounded">
       <ul>
         <li>
-          <a href="#home"><i class="fas fa-home"></i>home</a>
+          <a href="#home">ABOUT</a>
         </li>
         <li>
-          <a href="#CV"><i class="far fa-smile"></i>CV</a>
+          <a href="#CV">CV</a>
         </li>
         <li>
-          <a href="#writings"><i class="fas fa-hammer"></i>writings</a>
+          <a href="#writings">WRITINGS</a>
         </li>
         <li>
-          <a href="#contact"><i class="far fa-envelope"></i>contact</a>
+          <a href="#contact">CONTACT</a>
         </li>
       </ul>
     </nav>
 
-    <header id="home">
-      <div class="wrapper">
-        <h1 id="headerH1">Alan Rich</h1>
+    <header>
+      <div class="wrapper" id="colorMeSpecial2">
+        <h1>Alan Rich</h1>
 
         <p>Software Engineer</p>
 
-        <ul class="social">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/alanrich-dev/"
-              title="LinkedIn"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/alanrich-dev/"
+            title="LinkedIn"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
 
         <a class="rounded contactBtn" href="#contact">Contact</a>
       </div>
-
     </header>
 
     <section id="about">
       <div class="wrapper">
-        <h2>Hello, I'm Alan Rich</h2>
+        <h2>About</h2>
 
         <p>
           I'm working as software engineer, writing in Typescript, React and GraphQL and currently
@@ -111,20 +114,10 @@
         </p>
       </div>
     </section>
-    <!--**************************************************************************************************************************************************************************************************-->
-    <!--**************************************************************************************************************************************************************************************************-->
 
     <section id="contact">
-      <img class="wave2" src="./assets/wave.svg" alt="" aria-hidden="true" />
-
       <div class="wrapper">
         <h2>Contact</h2>
-
-        <p>
-          Email me at
-          <a href="mailto:alan@alanrich.dev">alan@alanrich.dev</a> or right
-          here:
-        </p>
 
         <form action="https://formspree.io/f/xrgrkoyo" method="POST">
           <div class="oneLine">
@@ -156,7 +149,7 @@
             name="message"
             cols="30"
             rows="10"
-            placeholder="hey, Alan!"
+            placeholder="get in touch"
             required
           ></textarea>
           <input class="rounded" type="submit" value="send message" />
@@ -165,10 +158,7 @@
     </section>
 
     <footer>
-      <p>
-        <i class="far fa-copyright"></i> Alan Rich 2020 - 2021
-        <i class="far fa-smile"></i>
-      </p>
+      <p><i class="far fa-copyright"></i> Alan Rich 2020 - 2021</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
