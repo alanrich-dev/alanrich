@@ -278,8 +278,8 @@ nav i {
 }
 
 header {
-  background-color: #06073f;
-  height: 100vh;
+  background-color: #3739ac;
+  height: 60vh;
   color: #faf9f4;
   text-align: center;
 }
@@ -362,17 +362,18 @@ header .contactBtn:hover, header .contactBtn:focus {
 
 header .social {
   z-index: 10;
-  width: 210px;
+  margin-bottom:16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -509,7 +510,7 @@ h2:before {
 }
 
 #about {
-  background-color: #faf9f4;
+  background-color: yellow;
 }
 
 #about h2:before {
@@ -542,55 +543,6 @@ h3 {
   margin-top: 0;
 }
 
-.project {
-  width: 100%;
-  border-bottom: 4px dotted #5154e8;
-  padding: 16px 0;
-}
-.project4 {
-  border-bottom: none;
-}
-
-.projLinks {
-  width: 100%;
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.projLinks a {
-  font-weight: 700;
-  color: #F0CD04;
-  text-decoration: none;
-  padding: 10px;
-  border: 2px solid #F0CD04;
-  border-radius: 5px;
-  -webkit-transition: background 0.3s, color 0.3s, border 0.3s;
-  transition: background 0.3s, color 0.3s, border 0.3s;
-}
-
-.projLinks a:first-of-type {
-  margin-right: 10px;
-}
-
-.projLinks a:hover {
-  color: #F0CD04;
-  background: #5154e8;
-  border: 2px solid #F0CD04;
-  transform: scale(1.15);
-  transition: transform 400ms
-}
 
 .left {
   -webkit-box-ordinal-group: 0;
@@ -706,7 +658,7 @@ h3 {
 }
 
 #contact {
-  background-color: #faf9f4;
+  background-color: #0db4ba;
 }
 
 #contact h2:before {
@@ -823,7 +775,7 @@ footer {
   color: #faf9f4;
   font-size: 1.3rem;
   position: relative;
-  background: #00916e;
+  background: #0db4ba;
 }
 
 footer p {
