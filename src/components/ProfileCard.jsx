@@ -49,11 +49,11 @@ function ProfileCard() {
         sx={{
           backgroundColor: theme.palette.primary.main,
           color: "#FFFFFF",
-          paddingTop: "48px",
+          paddingY: "48px",
           paddingLeft: "72px",
           display: "flex",
           flexDirection: "column",
-          gap: "36px",
+          gap: "32px",
           flexGrow: "1",
         }}
       >
