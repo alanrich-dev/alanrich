@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
     <Box
       sx={{
         flexGrow: 1,
-        padding: "16px",
         width: "100%",
         paddingLeft: "48px",
         paddingRight: "48px",
