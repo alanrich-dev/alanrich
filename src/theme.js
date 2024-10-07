@@ -29,8 +29,44 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#100F3A",
-      selected: "#8583E1",
+      secondary: "#2D2A82",
+      highlight: "#8583E1",
       background: "#F3F2F1",
+    },
+    text: {
+      primary: grey[900],
+      secondary: grey[600],
+    },
+    common: {
+      white: "#FFFFFF",
+      black: "#000000",
+    },
+    link: {
+      main: "#2D2A82",
+    },
+    icon: {
+      main: "#A7A6C2",
+    },
+    grey,
+  },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "#2D2A82",
+          textDecoration: "underline",
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontSize: "1rem",
+          fontWeight: "bold",
+          padding: "12px 24px",
+          textTransform: "uppercase",
+        },
+      },
     },
   },
 });
