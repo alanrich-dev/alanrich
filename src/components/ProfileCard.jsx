@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Paper, IconButton } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import {
   Edit as EditIcon,
   LocationOn as LocationIcon,
@@ -48,7 +48,7 @@ function ProfileCard() {
       <Box
         sx={{
           backgroundColor: theme.palette.primary.main,
-          color: "#FFFFFF",
+          color: theme.palette.common.white,
           paddingY: "48px",
           paddingLeft: "72px",
           display: "flex",
@@ -59,38 +59,47 @@ function ProfileCard() {
       >
         <Typography variant="h6">General Information</Typography>
         <Box display="flex" alignItems="center" gap="8px">
-          <EditIcon sx={{ color: "#A7A6C2" }} />
-          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+          <EditIcon sx={{ color: theme.palette.icon.main }} />
+          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
             Name:{" "}
-            <Typography component="span" sx={{ color: "#FFFFFF" }}>
+            <Typography
+              component="span"
+              sx={{ color: theme.palette.common.white }}
+            >
               Alan Rich
             </Typography>
           </Typography>
         </Box>
 
         <Box display="flex" alignItems="center" gap="8px">
-          <LocationIcon sx={{ color: "#A7A6C2" }} />
-          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+          <LocationIcon sx={{ color: theme.palette.icon.main }} />
+          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
             Location:{" "}
-            <Typography component="span" sx={{ color: "#FFFFFF" }}>
+            <Typography
+              component="span"
+              sx={{ color: theme.palette.common.white }}
+            >
               Toulouse, France
             </Typography>
           </Typography>
         </Box>
 
         <Box display="flex" alignItems="center" gap="8px">
-          <StarIcon sx={{ color: "#A7A6C2" }} />
-          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+          <StarIcon sx={{ color: theme.palette.icon.main }} />
+          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
             Date of Birth:{" "}
-            <Typography component="span" sx={{ color: "#FFFFFF" }}>
+            <Typography
+              component="span"
+              sx={{ color: theme.palette.common.white }}
+            >
               July 13, 1983
             </Typography>
           </Typography>
         </Box>
 
         <Box display="flex" alignItems="center" gap="8px">
-          <EmailIcon sx={{ color: "#A7A6C2" }} />
-          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+          <EmailIcon sx={{ color: theme.palette.icon.main }} />
+          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
             rich.alan@proton.me
           </Typography>
         </Box>
@@ -101,8 +110,8 @@ function ProfileCard() {
           gap="8px"
           sx={{ marginBottom: 0 }}
         >
-          <PhoneIcon sx={{ color: "#A7A6C2" }} />
-          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+          <PhoneIcon sx={{ color: theme.palette.icon.main }} />
+          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
             07 45 46 16 17
           </Typography>
         </Box>

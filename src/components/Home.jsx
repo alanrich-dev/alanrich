@@ -2,10 +2,8 @@ import React from "react";
 import { Typography, Button, Box } from "@mui/material";
 import { Download as DownloadIcon } from "@mui/icons-material";
 import Layout from "./Layout";
-import { useTheme } from "@mui/material/styles";
 
 function Home() {
-  const theme = useTheme();
   return (
     <Layout>
       <Box
@@ -35,13 +33,6 @@ function Home() {
           variant="contained"
           color="primary"
           startIcon={<DownloadIcon />}
-          sx={{
-            fontSize: "1rem",
-            fontWeight: "bold",
-            marginTop: "24px",
-            padding: "12px 24px",
-            textTransform: "uppercase",
-          }}
         >
           Contact Me
         </Button>
