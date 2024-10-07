@@ -23,9 +23,17 @@ const theme = createTheme({
       fontWeight: 900,
       fontSize: "1.8rem",
     },
+    h7: {
+      fontWeight: 900,
+      fontSize: "1.4rem",
+    },
     body1: {
       fontSize: "1rem",
       lineHeight: 1.7,
+    },
+    body2: {
+      fontSize: "1rem",
+      lineHeight: 1.2,
     },
     button: {
       textTransform: "uppercase",

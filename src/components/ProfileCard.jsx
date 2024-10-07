@@ -49,18 +49,18 @@ function ProfileCard() {
         sx={{
           backgroundColor: theme.palette.primary.main,
           color: theme.palette.common.white,
-          paddingY: "48px",
-          paddingLeft: "72px",
+          paddingY: "16px",
+          paddingLeft: "84px",
           display: "flex",
           flexDirection: "column",
-          gap: "32px",
+          gap: "12px",
           flexGrow: "1",
         }}
       >
-        <Typography variant="h6">General Information</Typography>
+        <Typography variant="h7">General Information</Typography>
         <Box display="flex" alignItems="center" gap="8px">
           <EditIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
+          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             Name:{" "}
             <Typography
               component="span"
@@ -73,7 +73,7 @@ function ProfileCard() {
 
         <Box display="flex" alignItems="center" gap="8px">
           <LocationIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
+          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             Location:{" "}
             <Typography
               component="span"
@@ -86,7 +86,7 @@ function ProfileCard() {
 
         <Box display="flex" alignItems="center" gap="8px">
           <StarIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
+          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             Date of Birth:{" "}
             <Typography
               component="span"
@@ -99,7 +99,7 @@ function ProfileCard() {
 
         <Box display="flex" alignItems="center" gap="8px">
           <EmailIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
+          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             rich.alan@proton.me
           </Typography>
         </Box>
@@ -111,7 +111,7 @@ function ProfileCard() {
           sx={{ marginBottom: 0 }}
         >
           <PhoneIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body1" sx={{ color: theme.palette.icon.main }}>
+          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             07 45 46 16 17
           </Typography>
         </Box>
