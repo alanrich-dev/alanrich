@@ -6,7 +6,6 @@ import theme from "./theme";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Education from "./components/Education";
-//import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
-          {/*<Route path="/contact" element={<Contact />} />*/}
+          {/* Additional routes can be added here */}
         </Routes>
       </Router>
     </ThemeProvider>

@@ -28,7 +28,7 @@ function Navbar() {
           sx={{
             fontWeight: "bold",
             letterSpacing: 1,
-            fontFamily: "Inter, sans-serif",
+            fontFamily: "Inter, Arial, sans-serif",
             color: "#FFFFFF",
           }}
         >

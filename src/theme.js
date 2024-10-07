@@ -13,6 +13,10 @@ const theme = createTheme({
       fontSize: "2rem",
       textTransform: "uppercase",
     },
+    h6: {
+      fontWeight: 900,
+      fontSize: "1.8rem",
+    },
     body1: {
       fontSize: "1.25rem",
       lineHeight: 1.7,

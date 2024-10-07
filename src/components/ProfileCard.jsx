@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Typography, Paper } from "@mui/material";
+import { Box, Typography, Paper, IconButton } from "@mui/material";
+import {
+  Edit as EditIcon,
+  LocationOn as LocationIcon,
+  Star as StarIcon,
+  Email as EmailIcon,
+  Phone as PhoneIcon,
+} from "@mui/icons-material";
 import profilePhoto from "../assets/profile-photo.png";
 import { useTheme } from "@mui/material/styles";
 
@@ -10,11 +17,14 @@ function ProfileCard() {
       elevation={3}
       sx={{
         width: "100%",
-        // borderRadius: "8px",
         overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100%",
+        backgroundColor: theme.palette.primary.main,
       }}
     >
-      {/* Image Section */}
       <Box
         sx={{
           display: "flex",
@@ -35,29 +45,67 @@ function ProfileCard() {
         />
       </Box>
 
-      {/* Text Section */}
       <Box
         sx={{
           backgroundColor: theme.palette.primary.main,
           color: "#FFFFFF",
-          padding: "16px",
+          paddingTop: "48px",
+          paddingLeft: "72px",
           display: "flex",
           flexDirection: "column",
-          gap: "8px",
+          gap: "36px",
+          flexGrow: "1",
         }}
       >
-        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-          General Information
-        </Typography>
-        <Typography variant="body1">
-          <strong>Name:</strong> Alan Rich
-        </Typography>
-        <Typography variant="body1">
-          <strong>Date of Birth:</strong> July 13, 1983
-        </Typography>
-        <Typography variant="body1">
-          <strong>Location:</strong> Toulouse, France
-        </Typography>
+        <Typography variant="h6">General Information</Typography>
+        <Box display="flex" alignItems="center" gap="8px">
+          <EditIcon sx={{ color: "#A7A6C2" }} />
+          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+            Name:{" "}
+            <Typography component="span" sx={{ color: "#FFFFFF" }}>
+              Alan Rich
+            </Typography>
+          </Typography>
+        </Box>
+
+        <Box display="flex" alignItems="center" gap="8px">
+          <LocationIcon sx={{ color: "#A7A6C2" }} />
+          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+            Location:{" "}
+            <Typography component="span" sx={{ color: "#FFFFFF" }}>
+              Toulouse, France
+            </Typography>
+          </Typography>
+        </Box>
+
+        <Box display="flex" alignItems="center" gap="8px">
+          <StarIcon sx={{ color: "#A7A6C2" }} />
+          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+            Date of Birth:{" "}
+            <Typography component="span" sx={{ color: "#FFFFFF" }}>
+              July 13, 1983
+            </Typography>
+          </Typography>
+        </Box>
+
+        <Box display="flex" alignItems="center" gap="8px">
+          <EmailIcon sx={{ color: "#A7A6C2" }} />
+          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+            rich.alan@proton.me
+          </Typography>
+        </Box>
+
+        <Box
+          display="flex"
+          alignItems="center"
+          gap="8px"
+          sx={{ marginBottom: 0 }}
+        >
+          <PhoneIcon sx={{ color: "#A7A6C2" }} />
+          <Typography variant="body1" sx={{ color: "#A7A6C2" }}>
+            07 45 46 16 17
+          </Typography>
+        </Box>
       </Box>
     </Paper>
   );
