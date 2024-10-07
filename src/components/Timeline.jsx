@@ -66,22 +66,6 @@ function Timeline({ heading, subheading, items }) {
           </React.Fragment>
         ))}
       </Grid>
-
-      {/* Contact Me Button */}
-      <Box sx={{ mt: 5, display: "flex", justifyContent: "flex-end" }}>
-        <Button
-          variant="contained"
-          color="primary"
-          component={RouterLink}
-          to="/contact"
-          sx={{
-            textTransform: "none",
-            fontWeight: "bold",
-          }}
-        >
-          Contact Me
-        </Button>
-      </Box>
     </Layout>
   );
 }

@@ -12,7 +12,6 @@ function Navbar() {
     { label: "Experience", path: "/experience" },
     { label: "Education", path: "/education" },
     { label: "Work Sample", path: "/worksample" },
-    { label: "Contact", path: "/contact" },
   ];
 
   return (

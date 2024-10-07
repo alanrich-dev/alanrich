@@ -1,6 +1,5 @@
 import React from "react";
-import { Typography, Button, Box } from "@mui/material";
-import { Download as DownloadIcon } from "@mui/icons-material";
+import { Typography, Box } from "@mui/material";
 import Layout from "./Layout";
 
 function Home() {
@@ -29,13 +28,6 @@ function Home() {
           unique experiences and skills, while embracing new lessons that will
           support my ongoing professional development.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          startIcon={<DownloadIcon />}
-        >
-          Contact Me
-        </Button>
       </Box>
     </Layout>
   );
