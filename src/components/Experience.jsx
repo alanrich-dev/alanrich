@@ -25,7 +25,7 @@ function Experience() {
         "As a freelancer on Upwork, I worked on numerous frontend projects for various clients, honing my skills in React and web development.",
     },
     {
-      date: "2019 - 2014",
+      date: "2019 - 2015",
       title: "Upwork",
       subtitle: "Technical Writer",
       description:
