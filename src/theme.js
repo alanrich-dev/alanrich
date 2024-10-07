@@ -6,7 +6,12 @@ const theme = createTheme({
     fontFamily: "Inter, Arial, sans-serif",
     h2: {
       fontWeight: 900,
-      fontSize: "5rem",
+      fontSize: "4rem",
+      textTransform: "uppercase",
+    },
+    h3: {
+      fontWeight: 900,
+      fontSize: "3.2rem",
       textTransform: "uppercase",
     },
     h4: {
@@ -19,7 +24,7 @@ const theme = createTheme({
       fontSize: "1.8rem",
     },
     body1: {
-      fontSize: "1.25rem",
+      fontSize: "1rem",
       lineHeight: 1.7,
     },
     button: {

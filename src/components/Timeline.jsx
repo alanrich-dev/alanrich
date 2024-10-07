@@ -10,11 +10,11 @@ function Timeline({ heading, subheading, items }) {
   return (
     <Layout>
       <Typography
-        variant="h4"
+        variant="h6"
         gutterBottom
         sx={{
           fontWeight: "bold",
-          textTransform: "uppercase",
+          //textTransform: "uppercase",
           color: theme.palette.primary.secondary,
           paddingTop: "64px",
         }}
@@ -22,7 +22,7 @@ function Timeline({ heading, subheading, items }) {
         {heading}
       </Typography>
       <Typography
-        variant="h2"
+        variant="h3"
         component="h1"
         gutterBottom
         sx={{
@@ -38,7 +38,7 @@ function Timeline({ heading, subheading, items }) {
           <React.Fragment key={index}>
             <Grid item xs={12} md={3}>
               <Typography
-                variant="h4"
+                variant="h6"
                 sx={{
                   color: theme.palette.primary.highlight,
                   fontWeight: "bold",

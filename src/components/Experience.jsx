@@ -4,28 +4,28 @@ import Timeline from "./Timeline";
 function Experience() {
   const experienceItems = [
     {
-      date: "2022 - 2024",
+      date: "2024 - 2022",
       title: "Research Innovations Inc.",
       subtitle: "Frontend Developer II",
       description:
         "At Research Innovations Inc., I worked as a Frontend Developer II, contributing to various projects involving React and other frontend technologies.",
     },
     {
-      date: "2021 - 2022",
+      date: "2022 - 2021",
       title: "OC Tanner",
       subtitle: "Frontend Developer I",
       description:
         "At OC Tanner, I developed user interfaces using React and improved performance and accessibility of web applications.",
     },
     {
-      date: "2019 - 2021",
+      date: "2021 - 2019",
       title: "Upwork",
       subtitle: "Frontend Developer I",
       description:
         "As a freelancer on Upwork, I worked on numerous frontend projects for various clients, honing my skills in React and web development.",
     },
     {
-      date: "2014 - 2019",
+      date: "2019 - 2014",
       title: "Upwork",
       subtitle: "Technical Writer",
       description:
