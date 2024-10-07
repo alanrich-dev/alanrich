@@ -2,23 +2,31 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Helvetica, Arial, sans-serif",
+    fontFamily: "Inter, Arial, sans-serif",
     h2: {
-      fontWeight: "bold",
+      fontWeight: 900,
+      fontSize: "5rem",
+      textTransform: "uppercase",
     },
     h4: {
-      fontWeight: "bold",
+      fontWeight: 900,
+      fontSize: "2rem",
+      textTransform: "uppercase",
     },
     body1: {
-      fontSize: "1rem",
+      fontSize: "1.25rem",
+      lineHeight: 1.7,
+    },
+    button: {
+      textTransform: "uppercase",
+      fontWeight: "bold",
     },
   },
   palette: {
     primary: {
-      main: "#2D2A82", // Adjust the primary color if needed
-    },
-    secondary: {
-      main: "#8E44AD",
+      main: "#100F3A",
+      selected: "#8583E1",
+      background: "#F3F2F1",
     },
   },
 });

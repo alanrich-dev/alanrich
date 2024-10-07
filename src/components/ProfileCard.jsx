@@ -1,14 +1,16 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
 import profilePhoto from "../assets/profile-photo.png";
+import { useTheme } from "@mui/material/styles";
 
 function ProfileCard() {
+  const theme = useTheme();
   return (
     <Paper
       elevation={3}
       sx={{
-        width: "300px",
-        borderRadius: "8px",
+        width: "100%",
+        // borderRadius: "8px",
         overflow: "hidden",
       }}
     >
@@ -19,7 +21,6 @@ function ProfileCard() {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          height: "300px",
           overflow: "hidden",
         }}
       >
@@ -29,8 +30,7 @@ function ProfileCard() {
           alt="Profile"
           sx={{
             width: "100%",
-            height: "100%",
-            objectFit: "cover",
+            height: "auto",
           }}
         />
       </Box>
@@ -38,7 +38,7 @@ function ProfileCard() {
       {/* Text Section */}
       <Box
         sx={{
-          backgroundColor: "#2D2A82",
+          backgroundColor: theme.palette.primary.main,
           color: "#FFFFFF",
           padding: "16px",
           display: "flex",

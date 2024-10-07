@@ -1,9 +1,11 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Box, Tabs, Tab } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "@mui/material/styles";
 
 function Navbar() {
   const location = useLocation();
+  const theme = useTheme(); // Access the theme
 
   const tabs = [
     { label: "About", path: "/" },
@@ -16,7 +18,7 @@ function Navbar() {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#2D2A82", boxShadow: "none" }}
+      sx={{ backgroundColor: theme.palette.primary.main, boxShadow: "none" }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
         {/* Name Section */}
@@ -26,7 +28,7 @@ function Navbar() {
           sx={{
             fontWeight: "bold",
             letterSpacing: 1,
-            fontFamily: "Roboto, sans-serif",
+            fontFamily: "Inter, sans-serif",
             color: "#FFFFFF",
           }}
         >
@@ -53,11 +55,11 @@ function Navbar() {
                 textTransform: "none",
                 fontWeight: "bold",
                 "&.Mui-selected": {
-                  backgroundColor: "#8E44AD",
+                  backgroundColor: theme.palette.primary.selected,
                   color: "#FFFFFF",
                 },
                 "&:hover": {
-                  backgroundColor: "#4A406E",
+                  backgroundColor: theme.palette.primary.selected,
                 },
               }}
             />
@@ -76,7 +78,7 @@ function Navbar() {
               textTransform: "none",
               fontWeight: "bold",
               "&:hover": {
-                backgroundColor: "#4A406E",
+                backgroundColor: theme.palette.primary.selected,
               },
             }}
           />

@@ -5,10 +5,10 @@ import ProfileCard from "./ProfileCard";
 
 function Education() {
   return (
-    <Box>
-      <Grid container spacing={8} justifyContent="center">
+    <Box sx={{ flexGrow: 1, padding: "16px" }}>
+      <Grid container spacing={4} justifyContent="center" alignItems="center">
         {/* Left Column: Profile Card */}
-        <Grid item>
+        <Grid item xs={12} md={4}>
           <ProfileCard />
         </Grid>
 
@@ -23,7 +23,7 @@ function Education() {
               color: "#2D2A82",
             }}
           >
-            What I am good at
+            What I studied
           </Typography>
           <Typography
             variant="h2"
@@ -66,7 +66,7 @@ function Education() {
                     Benedictine University
                   </Typography>
                   <Typography variant="subtitle1">
-                    Bachelor of Science (Bac + 4 )
+                    Bachelor of Science
                   </Typography>
                   <Typography variant="body1" sx={{ color: "#666" }}>
                     <Typography component="span" sx={{ fontWeight: "bold" }}>
@@ -172,11 +172,11 @@ function Education() {
           <Box sx={{ mt: 5, display: "flex", justifyContent: "flex-end" }}>
             <Button
               variant="contained"
-              color="secondary"
+              color="primary"
               component={Link}
               to="/contact"
               sx={{
-                borderRadius: "8px",
+                //borderRadius: "8px",
                 textTransform: "none",
                 fontWeight: "bold",
               }}

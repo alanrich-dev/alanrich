@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CssBaseline, Container } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import theme from "./theme";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Education from "./components/Education";
@@ -8,17 +10,17 @@ import Education from "./components/Education";
 
 function App() {
   return (
-    <Router>
-      <CssBaseline />
-      <Navbar />
-      <Container maxWidth="lg" sx={{ mt: 4 }}>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <CssBaseline />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           {/*<Route path="/contact" element={<Contact />} />*/}
         </Routes>
-      </Container>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
 
