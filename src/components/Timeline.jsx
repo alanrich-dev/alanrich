@@ -14,7 +14,7 @@ function Timeline({ heading, subheading, items }) {
           sx={{
             fontWeight: "bold",
             color: theme.palette.primary.secondary,
-            paddingTop: { xs: 4, sm: 6, md: 8 },
+            paddingTop: { xs: 4, sm: 4, md: 4 },
           }}
         >
           {heading}
