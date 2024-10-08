@@ -1,6 +1,7 @@
 import React from "react";
-import { Typography, Link } from "@mui/material";
-import Timeline from "./Timeline"; // this path is not recognized but I have placed the Timeline file in the same folder as the Education file
+import Layout from "./Layout";
+import Timeline from "./Timeline";
+import { Typography } from "@mui/material";
 
 function Education() {
   const educationItems = [
@@ -15,13 +16,15 @@ function Education() {
           </Typography>{" "}
           “A One-Pot Asymmetric Robinson Annulation in the Organic Chemistry
           Majors Laboratory”,{" "}
-          <Link
+          <Typography
+            component="a"
             href="https://doi.org/10.1021/ed085p1531"
             target="_blank"
             rel="noopener noreferrer"
+            sx={{ color: "inherit", textDecoration: "underline" }}
           >
             Journal of Chemical Education, 85 (2008) DOI:10.1021/ed085p1531
-          </Link>
+          </Typography>
         </>
       ),
     },
@@ -37,16 +40,58 @@ function Education() {
       title: "Illinois Institute of Technology",
       subtitle: "Molecular Biology (PhD Program)",
       description:
-        "I was briefly enrolled in a doctoral program but decided that academic research was not my calling. During my studies I performed genomic analysis of human colorectal cancer cells affected by microsatellite mutations in the BaxΔ2 gene.",
+        "I was briefly enrolled in a doctoral program but decided that academic research was not my calling. During my studies, I performed genomic analysis of human colorectal cancer cells affected by microsatellite mutations in the BaxΔ2 gene.",
+    },
+  ];
+
+  const presentationItems = [
+    {
+      date: "October 17, 2008",
+      title:
+        "Asymmetric Organocatalysis: Conjugate Addition Reactions & Robinson Annulations",
+      subtitle:
+        "Science and Sociability Seminar, Benedictine University, Lisle, Illinois",
+    },
+    {
+      date: "April 7, 2008",
+      title: "Synthesis of Organocatalysts for Asymmetric Robinson Annulations",
+      subtitle:
+        "235th ACS Spring National Meeting, Division of Chemical Education, New Orleans, Louisiana",
+      description: "Poster ID: 1163539",
+    },
+    {
+      date: "March 29, 2007",
+      title:
+        "Asymmetric Catalysis in the Undergraduate Research and Teaching Curriculum",
+      subtitle:
+        "233rd ACS Spring National Meeting, Division of Chemical Education, Chicago, Illinois",
+    },
+    {
+      date: "March 26, 2007",
+      title:
+        "Reactivity and Enantioselectivity of Chiral Imidazolidinone Organocatalysts in Asymmetric Robinson Annulations",
+      subtitle:
+        "233rd ACS Spring National Meeting, Division of Chemical Education, Chicago, Illinois",
+      description: "Poster ID: 659",
     },
   ];
 
   return (
-    <Timeline
-      heading="What I've studied"
-      subheading="My Education"
-      items={educationItems}
-    />
+    <Layout>
+      {/* Education Section */}
+      <Timeline
+        heading="What I've studied"
+        subheading="My Education"
+        items={educationItems}
+      />
+
+      {/* Academic Contributions Section */}
+      <Timeline
+        subheading=" Academic Contributions"
+        heading="Peer-Reviewed and Invited Presentations"
+        items={presentationItems}
+      />
+    </Layout>
   );
 }
 

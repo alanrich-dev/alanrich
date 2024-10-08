@@ -1,35 +1,39 @@
 import React from "react";
 import { Typography, Grid } from "@mui/material";
-import Layout from "./Layout";
 import { useTheme } from "@mui/material/styles";
 
 function Timeline({ heading, subheading, items }) {
   const theme = useTheme();
 
   return (
-    <Layout>
-      <Typography
-        variant="h6"
-        gutterBottom
-        sx={{
-          fontWeight: "bold",
-          color: theme.palette.primary.secondary,
-          paddingTop: { xs: 4, sm: 6, md: 8 },
-        }}
-      >
-        {heading}
-      </Typography>
-      <Typography
-        variant="h3"
-        component="h1"
-        gutterBottom
-        sx={{
-          textTransform: "uppercase",
-          color: theme.palette.primary.main,
-        }}
-      >
-        {subheading}
-      </Typography>
+    <div>
+      {heading && (
+        <Typography
+          variant="h6"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            color: theme.palette.primary.secondary,
+            paddingTop: { xs: 4, sm: 6, md: 8 },
+          }}
+        >
+          {heading}
+        </Typography>
+      )}
+
+      {subheading && (
+        <Typography
+          variant="h3"
+          component="h1"
+          gutterBottom
+          sx={{
+            textTransform: "uppercase",
+            color: theme.palette.primary.main,
+          }}
+        >
+          {subheading}
+        </Typography>
+      )}
 
       <Grid
         container
@@ -67,20 +71,24 @@ function Timeline({ heading, subheading, items }) {
                   <Typography variant="h5" sx={{ fontWeight: "bold" }}>
                     {item.title}
                   </Typography>
-                  <Typography variant="subtitle1">{item.subtitle}</Typography>
-                  <Typography
-                    variant="body1"
-                    sx={{ color: theme.palette.text.secondary }}
-                  >
-                    {item.description}
-                  </Typography>
+                  {item.subtitle && (
+                    <Typography variant="subtitle1">{item.subtitle}</Typography>
+                  )}
+                  {item.description && (
+                    <Typography
+                      variant="body1"
+                      sx={{ color: theme.palette.text.secondary }}
+                    >
+                      {item.description}
+                    </Typography>
+                  )}
                 </Grid>
               </Grid>
             </Grid>
           </React.Fragment>
         ))}
       </Grid>
-    </Layout>
+    </div>
   );
 }
 

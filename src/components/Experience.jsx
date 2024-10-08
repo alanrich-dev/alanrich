@@ -1,5 +1,6 @@
 import React from "react";
 import Timeline from "./Timeline";
+import Layout from "./Layout";
 
 function Experience() {
   const experienceItems = [
@@ -48,11 +49,13 @@ function Experience() {
   ];
 
   return (
-    <Timeline
-      heading="Where I've worked"
-      subheading="My Experience"
-      items={experienceItems}
-    />
+    <Layout>
+      <Timeline
+        heading="Where I've worked"
+        subheading="My Experience"
+        items={experienceItems}
+      />
+    </Layout>
   );
 }
 
