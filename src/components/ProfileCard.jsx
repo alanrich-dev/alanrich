@@ -114,7 +114,7 @@ function ProfileCard() {
         >
           <PhoneIcon sx={{ color: theme.palette.icon.main }} />
           <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
-            07 45 46 16 17
+            07 45 64 16 17
           </Typography>
         </Box>
       </Box>
