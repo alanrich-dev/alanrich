@@ -37,7 +37,7 @@ function Navbar() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{ backgroundColor: theme.palette.primary.main, boxShadow: "none" }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>

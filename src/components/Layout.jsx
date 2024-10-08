@@ -5,56 +5,54 @@ import { useTheme } from "@mui/material/styles";
 
 const Layout = ({ children }) => {
   const theme = useTheme();
+  const navbarHeight = 64; //TODO: May need adjustment
+
   return (
     <Box
       sx={{
-        flexGrow: 1,
-        width: "100%",
-        px: { xs: 2, sm: 3, md: 6 },
-        maxWidth: "1600px",
-        margin: "0 auto",
+        position: "relative",
+        height: `calc(100vh - ${navbarHeight}px)`,
+        marginTop: `${navbarHeight}px`,
+        display: "flex",
       }}
     >
-      <Paper
-        elevation={3}
+      {/* Left Column: Profile Card */}
+
+      <Box
         sx={{
-          display: "flex",
-          alignItems: "stretch",
-          backgroundColor: theme.palette.primary.background,
-          overflow: "hidden",
-          padding: "0",
+          width: { xs: "100%", md: "25%" }, // This adjusts the width nicely
+          backgroundColor: theme.palette.primary.main,
+          position: { xs: "static", md: "fixed" },
+          height: `calc(100vh - ${navbarHeight}px)`,
+          overflowY: "auto",
         }}
       >
-        <Grid container spacing={0} alignItems="stretch">
-          {/* Left Column: Profile Card */}
-          <Grid item xs={12} md={4}>
-            <Box
-              sx={{
-                height: "100%",
-                backgroundColor: theme.palette.primary.main,
-              }}
-            >
-              <ProfileCard />
-            </Box>
-          </Grid>
+        <ProfileCard />
+      </Box>
 
-          {/* Right Column: Dynamic Content */}
-          <Grid item xs={12} md={8}>
-            <Box
-              sx={{
-                py: { xs: 4, sm: 6, md: 8 },
-                px: { xs: 2, sm: 4, md: 6, lg: 8 },
-                backgroundColor: theme.palette.primary.background,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              {children}
-            </Box>
-          </Grid>
-        </Grid>
-      </Paper>
+      {/* Right Column: Dynamic Content */}
+      <Box
+        sx={{
+          marginLeft: { xs: 0, md: "25%" },
+          height: `calc(100vh - ${navbarHeight}px)`,
+          overflowY: "auto", // Ensures only the right column with text is scrollable
+          backgroundColor: theme.palette.primary.background,
+          py: { xs: 4, sm: 6, md: 8 },
+          px: { xs: 2, sm: 4, md: 6, lg: 8 },
+          flexGrow: 1,
+          display: "flex",
+          justifyContent: "center", // Center the text content horizontally
+        }}
+      >
+        <Box
+          sx={{
+            maxWidth: "800px",
+            width: "100%",
+          }}
+        >
+          {children}
+        </Box>
+      </Box>
     </Box>
   );
 };

@@ -20,7 +20,7 @@ function ProfileCard() {
         overflow: "hidden",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
+        justifyContent: "space-between", // TODO: should we remove?
         height: "100%",
         backgroundColor: theme.palette.primary.main,
       }}
@@ -31,7 +31,7 @@ function ProfileCard() {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          overflow: "hidden",
+          //overflow: "hidden", // To control scroll
         }}
       >
         <Box
@@ -42,6 +42,7 @@ function ProfileCard() {
             width: "100%",
             height: "auto", // for image scaling
             display: "block", // for image scaling
+            objectFit: "contain", // Ensures the image is never cropped
           }}
         />
       </Box>
@@ -50,11 +51,11 @@ function ProfileCard() {
         sx={{
           backgroundColor: theme.palette.primary.main,
           color: theme.palette.common.white,
-          py: 2,
-          px: { xs: 2, sm: 4, md: 6 },
+          py: 3,
+          px: { xs: 2, sm: 3, md: 5 },
           display: "flex",
           flexDirection: "column",
-          gap: 1.5,
+          gap: 1.8,
           flexGrow: "1",
         }}
       >
