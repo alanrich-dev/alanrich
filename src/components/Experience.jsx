@@ -8,7 +8,7 @@ function Experience() {
       title: "Research Innovations Inc.",
       subtitle: "Frontend Developer II",
       description:
-        "During my time working for a Department of Defense contractor, I developed user interfaces that supported decision-making in battlefield operations. I primarily used React, Javascript, TypeScript, and MUI to build front-end components within a large NX monorepo, where configuration files drove much of the application's structure. Working in an agile environment, I focused on maintaining the system, troubleshooting, and resolving bugs. One of the more challenging aspects was navigating a complex web of configuration files that lacked internal documentation. I also gained valuable experience with Next.js and Jenkins during my tenure.",
+        "While working for a Department of Defense contractor, I developed a user interface that supported decision-making in battlefield operations, with the application being used at high levels of command, including the Secretary of Defense. I primarily used React, JavaScript, and MUI to build front-end components within a large NX monorepo, where configuration files drove much of the application's structure. My responsibilities focused on maintaining the system, troubleshooting, and resolving bugs by navigating a complex web of configuration files that lacked internal documentation. Additionally, I gained some experience with Next.js, Storybook, Cypress and Jenkins during my tenure.",
     },
     {
       date: "2022 - 2021",
@@ -36,7 +36,7 @@ function Experience() {
       title: "Illinois Institute of Technology",
       subtitle: "Graduate Research Assistant",
       description:
-        " I conducted genomic analysis of human colorectal cancer cells affected by microsatellite mutations in the BaxΔ2 gene. This role involved performing lab techniques such as DNA extraction, PCR amplification, gel electrophoresis, and sequencing to analyze genetic mutations. While I gained valuable experience in molecular biology and cancer research, I eventually realized that academic research was not my calling. This experience, however, deepened my analytical skills and understanding of scientific research methodologies.",
+        "I conducted genomic analysis of human colorectal cancer cells affected by microsatellite mutations in the BaxΔ2 gene. This role involved performing lab techniques such as DNA extraction, PCR amplification, gel electrophoresis, and sequencing to analyze genetic mutations. While I gained valuable experience in molecular biology and cancer research, I eventually realized that academic research was not my calling. This experience, however, deepened my analytical skills and understanding of scientific research methodologies.",
     },
     {
       date: "2012 - 2013",
