@@ -24,6 +24,7 @@ function Navbar() {
     { label: "Experience", path: "/experience" },
     { label: "Education", path: "/education" },
     { label: "Work Sample", path: "/worksample" },
+    { label: "Personal Interests", path: "/personal-interests" },
   ];
 
   const [anchorEl, setAnchorEl] = React.useState(null);

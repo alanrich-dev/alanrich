@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import PersonalInterests from "./components/PersonalInterests";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
-          {/* Additional routes can be added here */}
+          <Route path="/personal-interests" element={<PersonalInterests />} />
         </Routes>
       </Router>
     </ThemeProvider>
