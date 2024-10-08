@@ -31,7 +31,23 @@ function Timeline({ heading, subheading, items }) {
         {subheading}
       </Typography>
 
-      <Grid container spacing={4} alignItems="center" paddingTop="64px">
+      <Grid
+        container
+        spacing={4}
+        alignItems="center"
+        sx={{
+          paddingTop: {
+            xs: theme.spacing(3),
+            sm: theme.spacing(5),
+            md: theme.spacing(8),
+          },
+          paddingBottom: {
+            xs: theme.spacing(2),
+            sm: theme.spacing(4),
+            md: theme.spacing(6),
+          },
+        }}
+      >
         {items.map((item, index) => (
           <React.Fragment key={index}>
             <Grid item xs={12} md={3}>
