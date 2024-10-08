@@ -40,7 +40,8 @@ function ProfileCard() {
           alt="Profile"
           sx={{
             width: "100%",
-            height: "auto",
+            height: "auto", // for image scaling
+            display: "block", // for image scaling
           }}
         />
       </Box>
@@ -49,11 +50,11 @@ function ProfileCard() {
         sx={{
           backgroundColor: theme.palette.primary.main,
           color: theme.palette.common.white,
-          paddingY: "16px",
-          paddingLeft: "84px",
+          py: 2,
+          px: { xs: 2, sm: 4, md: 6 },
           display: "flex",
           flexDirection: "column",
-          gap: "12px",
+          gap: 1.5,
           flexGrow: "1",
         }}
       >

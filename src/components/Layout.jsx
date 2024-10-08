@@ -10,9 +10,8 @@ const Layout = ({ children }) => {
       sx={{
         flexGrow: 1,
         width: "100%",
-        paddingLeft: "48px",
-        paddingRight: "48px",
-        maxWidth: "2400px",
+        px: { xs: 2, sm: 3, md: 6 },
+        maxWidth: "1600px",
         margin: "0 auto",
       }}
     >
@@ -43,8 +42,8 @@ const Layout = ({ children }) => {
           <Grid item xs={12} md={8}>
             <Box
               sx={{
-                py: "64px",
-                px: { xs: "16px", sm: "32px", md: "128px" },
+                py: { xs: 4, sm: 6, md: 8 },
+                px: { xs: 2, sm: 4, md: 6, lg: 8 },
                 backgroundColor: theme.palette.primary.background,
                 display: "flex",
                 flexDirection: "column",

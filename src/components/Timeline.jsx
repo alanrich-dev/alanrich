@@ -1,7 +1,6 @@
 import React from "react";
-import { Box, Typography, Grid, Button } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import Layout from "./Layout";
-import { Link as RouterLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 
 function Timeline({ heading, subheading, items }) {
@@ -14,9 +13,8 @@ function Timeline({ heading, subheading, items }) {
         gutterBottom
         sx={{
           fontWeight: "bold",
-          //textTransform: "uppercase",
           color: theme.palette.primary.secondary,
-          paddingTop: "64px",
+          paddingTop: { xs: 4, sm: 6, md: 8 },
         }}
       >
         {heading}
