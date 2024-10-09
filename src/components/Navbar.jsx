@@ -23,7 +23,6 @@ function Navbar() {
     { label: "About", path: "/" },
     { label: "Experience", path: "/experience" },
     { label: "Education", path: "/education" },
-    // { label: "Work Sample", path: "/work-sample" },
     {
       label: "Work Sample",
       path: "https://anabasis-backend-dae5e617aab9.herokuapp.com/",
