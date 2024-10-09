@@ -26,7 +26,7 @@ function Navbar() {
     // { label: "Work Sample", path: "/work-sample" },
     {
       label: "Work Sample",
-      path: "https://alanrich.dev/work-sample",
+      path: "https://anabasis-backend-dae5e617aab9.herokuapp.com/",
       external: true,
     },
 
