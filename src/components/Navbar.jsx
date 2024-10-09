@@ -28,7 +28,7 @@ function Navbar() {
       path: "https://anabasis-backend-dae5e617aab9.herokuapp.com/",
       external: true,
     },
-
+    { label: "Github", path: "https://github.com/alanrich", external: true },
     { label: "Personal Interests", path: "/personal-interests" },
   ];
 
