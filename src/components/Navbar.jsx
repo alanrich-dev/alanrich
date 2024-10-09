@@ -122,7 +122,7 @@ function Navbar() {
             <Tab
               label="CV"
               component="a"
-              href="/alanRICHCV.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               sx={{
