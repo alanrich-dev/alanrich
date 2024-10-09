@@ -23,7 +23,7 @@ function Navbar() {
     { label: "About", path: "/" },
     { label: "Experience", path: "/experience" },
     { label: "Education", path: "/education" },
-    { label: "Work Sample", path: "/worksample" },
+    { label: "Work Sample", path: "/work-sample" },
     { label: "Personal Interests", path: "/personal-interests" },
   ];
 
