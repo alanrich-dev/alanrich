@@ -110,12 +110,13 @@ function PersonalInterests() {
               is a priviledge of education that I fully embrace and strive to
               constantly develop. I recently took a sabbatical from work to do a
               grand tour of Europe. Whilst inter-railing, I visited 56 cities,
-              where I viewed stunning works of art, spent nights under the stars
-              (and the midnight sun) and walked in the footsteps of historical
-              figures who have been transfixed in my imagination since I was a
-              teenager studying Latin and ancient Greek. It was a rejuvenating
-              experience, a well needed break from the grind, and it revitalized
-              my passion for my trade, software development.
+              where I viewed stunning works of art and civilization, spent
+              nights under the stars (and the midnight sun) and walked in the
+              footsteps of historical figures who have been transfixed in my
+              imagination since I was an adolescent studying Latin and ancient
+              Greek. It was a rejuvenating experience, a well needed break from
+              the grind, and it revitalized my passion for my trade, software
+              development.
             </Typography>
 
             {/* Interests List */}
@@ -228,13 +229,13 @@ function PersonalInterests() {
               pleinement et que je m'efforce constamment de développer. J'ai
               récemment pris un congé sabbatique pour faire un grand tour de
               l'Europe. Pendant mon voyage inter-railing, j'ai visité 56 villes,
-              où j'ai admiré des œuvres d'art magnifiques, passé des nuits sous
-              les étoiles (et le soleil de minuit) et marché dans les traces de
-              figures historiques qui ont captivé mon imagination depuis que
-              j'étais adolescent, étudiant le latin et le grec ancien. Ce fut
-              une expérience revigorante, une pause bien méritée du quotidien,
-              qui a ravivé ma passion pour mon métier, le développement
-              logiciel.
+              où j'ai admiré des œuvres d'art et de civilisation magnifiques,
+              passé des nuits sous les étoiles (et le soleil de minuit) et
+              marché dans les traces de figures historiques qui ont captivé mon
+              imagination depuis que j'étais adolescent, étudiant le latin et le
+              grec ancien. Ce fut une expérience revigorante, une pause bien
+              méritée du quotidien, qui a ravivé ma passion pour mon métier, le
+              développement logiciel.
             </Typography>
 
             {/* Interests List in French */}
