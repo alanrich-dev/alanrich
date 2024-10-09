@@ -16,7 +16,7 @@ function Experience() {
       title: "Research Innovations Inc.",
       subtitle: "Frontend Developer II",
       description:
-        "While working for a Department of Defense contractor, I developed a user interface that supported decision-making in battlefield operations, with the application being used at high levels of command, including the Secretary of Defense. I primarily used React, JavaScript, and MUI to build front-end components within a large NX monorepo, where configuration files drove much of the application's structure. My responsibilities focused on maintaining the system, troubleshooting, and resolving bugs by navigating a complex web of configuration files that lacked internal documentation. Additionally, I gained some experience with Next.js, Storybook, Cypress and Jenkins during my tenure.",
+        "While working for a Department of Defense contractor, I developed a user interface that supported rapid decision-making in battlefield operations, with the application being used at high levels of command, including the Secretary of Defense. I primarily used React, JavaScript, and MUI to build front-end components within a large NX monorepo, where configuration files drove much of the application's structure. My responsibilities focused on maintaining the system, troubleshooting, and resolving bugs by navigating a complex web of configuration files that lacked internal documentation. Additionally, I gained some experience with Next.js, Storybook, Cypress and Jenkins during my tenure.",
     },
     {
       date: "2022 - 2021",
