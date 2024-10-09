@@ -19,9 +19,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/personal-interests" element={<PersonalInterests />} />
           <Route path="/work-sample" />
           <Route path="/Github" />
-          <Route path="/personal-interests" element={<PersonalInterests />} />
         </Routes>
       </Router>
     </ThemeProvider>
