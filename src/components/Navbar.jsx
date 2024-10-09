@@ -23,7 +23,13 @@ function Navbar() {
     { label: "About", path: "/" },
     { label: "Experience", path: "/experience" },
     { label: "Education", path: "/education" },
-    { label: "Work Sample", path: "/work-sample" },
+    // { label: "Work Sample", path: "/work-sample" },
+    {
+      label: "Work Sample",
+      path: "https://alanrich.dev/work-sample",
+      external: true,
+    },
+
     { label: "Personal Interests", path: "/personal-interests" },
   ];
 
@@ -75,8 +81,8 @@ function Navbar() {
                 <MenuItem
                   key={tab.path}
                   component={tab.external ? "a" : Link}
-                  to={tab.external ? undefined : tab.path}
                   href={tab.external ? tab.path : undefined}
+                  to={tab.external ? undefined : tab.path}
                   target={tab.external ? "_blank" : undefined}
                   rel={tab.external ? "noopener noreferrer" : undefined}
                   onClick={handleMenuClose}
@@ -98,8 +104,11 @@ function Navbar() {
                 key={tab.path}
                 label={tab.label}
                 value={tab.path}
-                component={Link}
-                to={tab.path}
+                component={tab.external ? "a" : Link}
+                to={tab.external ? undefined : tab.path}
+                href={tab.external ? tab.path : undefined}
+                target={tab.external ? "_blank" : undefined}
+                rel={tab.external ? "noopener noreferrer" : undefined}
                 sx={{
                   px: { xs: 1, sm: 2, md: 3 },
                   minWidth: "auto",
