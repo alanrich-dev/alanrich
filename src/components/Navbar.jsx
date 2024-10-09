@@ -25,7 +25,8 @@ function Navbar() {
     { label: "Education", path: "/education" },
     {
       label: "Work Sample",
-      path: "https://anabasis-backend-dae5e617aab9.herokuapp.com/",
+      // path: "https://anabasis-backend-dae5e617aab9.herokuapp.com/",
+      path: "https://alanrich.dev/work-sample",
       external: true,
     },
     { label: "Github", path: "https://github.com/alanrich", external: true },
