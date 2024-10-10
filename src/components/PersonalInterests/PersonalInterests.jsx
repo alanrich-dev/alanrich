@@ -32,6 +32,10 @@ function PersonalInterests() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [visibleImages, setVisibleImages] = useState(6); // Show 6 images initially
 
+  const handleViewMore = () => {
+    setVisibleImages(visibleImages + 6); // Load 6 more images each time
+  };
+
   // Toggle between English and French
   const handleToggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === "en" ? "fr" : "en"));
@@ -232,48 +236,43 @@ function PersonalInterests() {
     language,
     handleOpenModal,
     visibleImages,
-    setVisibleImages,
-  }) => {
-    const handleViewMore = () => {
-      setVisibleImages(visibleImages + 6); // Load 6 more images each time
-    };
-    return (
-      <Box mb={4}>
-        <Typography
-          variant="h4"
-          component="h1"
-          gutterBottom
-          sx={{
-            textTransform: "uppercase",
-            color: theme.palette.primary.main,
-          }}
-        >
-          {content[language].photoGalleryTitle}
-        </Typography>
-        <ImageList variant="masonry" cols={3} gap={8}>
-          {images.slice(0, visibleImages).map((item, index) => (
-            <ImageListItem
-              key={index}
-              onClick={() => handleOpenModal(item)}
-              sx={{ cursor: "pointer" }}
-            >
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={language === "en" ? item.titleEn : item.titleFr}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-        {visibleImages < images.length && (
-          <Button onClick={handleViewMore} variant="contained" sx={{ mt: 2 }}>
-            View More Images
-          </Button>
-        )}
-      </Box>
-    );
-  };
+    handleViewMore,
+  }) => (
+    <Box mb={4}>
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+        sx={{
+          textTransform: "uppercase",
+          color: theme.palette.primary.main,
+        }}
+      >
+        {content[language].photoGalleryTitle}
+      </Typography>
+      <ImageList variant="masonry" cols={3} gap={8}>
+        {images.slice(0, visibleImages).map((item, index) => (
+          <ImageListItem
+            key={index}
+            onClick={() => handleOpenModal(item)}
+            sx={{ cursor: "pointer" }}
+          >
+            <img
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              alt={language === "en" ? item.titleEn : item.titleFr}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+      {visibleImages < images.length && (
+        <Button onClick={handleViewMore} variant="contained" sx={{ mt: 2 }}>
+          View More Images
+        </Button>
+      )}
+    </Box>
+  );
 
   return (
     <Layout>
@@ -347,7 +346,7 @@ function PersonalInterests() {
           language={language}
           handleOpenModal={handleOpenModal}
           visibleImages={visibleImages}
-          setVisibleImages={setVisibleImages}
+          handleViewMore={handleViewMore}
         />
 
         {/* Modal for Image */}
