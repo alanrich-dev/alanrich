@@ -10,8 +10,10 @@ import {
 } from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
 import Layout from "./Layout";
+import { useTheme } from "@mui/material/styles";
 
 function PersonalInterests() {
+  const theme = useTheme();
   const [language, setLanguage] = useState("en");
   const [openModal, setOpenModal] = useState(false);
   const [modalImage, setModalImage] = useState(null);
@@ -38,7 +40,8 @@ function PersonalInterests() {
 
   const content = {
     en: {
-      title: "Personal Interests",
+      heading: "How I spend my free time",
+      subheading: "Personal Interests",
       introduction: `The Romans had a concept of leisure that resonates well with my
         inclinations for how to spend my time outside of work, <i>Otium cum Dignitate</i>,
         leisure with dignity, the notion that leisure well spent is leisure that
@@ -62,7 +65,8 @@ function PersonalInterests() {
       recommendationsTitle: "Media Recommendations",
     },
     fr: {
-      title: "Intérêts Personnels",
+      heading: "Mes Passe-temps",
+      subheading: "Intérêts Personnels",
       introduction: `Les Romains avaient un concept de loisirs qui résonne bien avec
         mes inclinations sur la façon de passer mon temps en dehors du
         travail, <i>Otium cum Dignitate</i>, le loisir avec dignité,
@@ -298,8 +302,6 @@ function PersonalInterests() {
 
   const InterestsList = ({ interests, language }) => (
     <Box mb={4}>
-      {" "}
-      {/* Added margin-bottom for spacing */}
       <Typography variant="h4" component="h3" gutterBottom>
         {content[language].interestsTitle}
       </Typography>
@@ -333,8 +335,6 @@ function PersonalInterests() {
 
   const PhotoGallery = ({ images, language, handleOpenModal }) => (
     <Box mb={4}>
-      {" "}
-      {/* Added margin-bottom for spacing */}
       <Typography variant="h4" component="h3" gutterBottom>
         {content[language].photoGalleryTitle}
       </Typography>
@@ -359,8 +359,6 @@ function PersonalInterests() {
 
   const Recommendations = ({ recommendations, language }) => (
     <Box mb={4}>
-      {" "}
-      {/* Added margin-bottom for spacing */}
       <Typography variant="h4" component="h3" gutterBottom>
         {content[language].recommendationsTitle}
       </Typography>
@@ -373,7 +371,7 @@ function PersonalInterests() {
                 alt={rec.title}
                 style={{
                   width: "100%",
-                  height: language === "en" ? "180px" : "200px", // Adjusted height based on language, because French is more verbose
+                  height: language === "en" ? "180px" : "200px", // Adjusted height based on language because french can be more verbose
                   objectFit: "cover",
                 }}
               />
@@ -403,7 +401,6 @@ function PersonalInterests() {
           paddingBottom: { xs: 4, sm: 6, md: 8 },
         }}
       >
-        {/* Translation Button in Top Right */}
         <Box
           sx={{
             position: "absolute",
@@ -422,19 +419,35 @@ function PersonalInterests() {
           </Button>
         </Box>
 
-        {/* Header */}
+        {/* Heading and Subheading */}
         <Box mb={4}>
-          {" "}
-          {/* Added margin-bottom for spacing */}
-          <Typography variant="h2" component="h2" gutterBottom>
-            {content[language].title}
+          <Typography
+            variant="h6"
+            gutterBottom
+            sx={{
+              fontWeight: "bold",
+              color: theme.palette.primary.secondary,
+              paddingTop: { xs: 4, sm: 4, md: 4 },
+            }}
+          >
+            {content[language].heading}
+          </Typography>
+
+          <Typography
+            variant="h3"
+            component="h1"
+            gutterBottom
+            sx={{
+              textTransform: "uppercase",
+              color: theme.palette.primary.main,
+            }}
+          >
+            {content[language].subheading}
           </Typography>
         </Box>
 
         {/* Introduction Text */}
         <Box mb={4}>
-          {" "}
-          {/* Added margin-bottom for spacing */}
           <Typography
             variant="body1"
             paragraph
@@ -495,7 +508,7 @@ function PersonalInterests() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: "1rem",
+                fontSize: "1rem", // Explicitly set font size for control
               }}
             >
               {selectedItem &&
