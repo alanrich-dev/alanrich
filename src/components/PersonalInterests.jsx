@@ -60,9 +60,9 @@ function PersonalInterests() {
         Greek. It was a rejuvenating experience, a well needed break from
         the grind, and it revitalized my passion for my trade, software
         development.`,
-      interestsTitle: "My Interests",
-      photoGalleryTitle: "Photo Gallery",
-      recommendationsTitle: "Media Recommendations",
+      interestsTitle: "Some of my passions",
+      photoGalleryTitle: "2024 Highlights",
+      recommendationsTitle: "What I like to watch",
     },
     fr: {
       heading: "Mes Passe-temps",
@@ -88,9 +88,9 @@ function PersonalInterests() {
         grec ancien. Ce fut une expérience revigorante, une pause bien
         méritée du quotidien, qui a ravivé ma passion pour mon métier, le
         développement logiciel.`,
-      interestsTitle: "Mes Intérêts",
-      photoGalleryTitle: "Galerie de Photos",
-      recommendationsTitle: "Media Recommendations",
+      interestsTitle: "Quelques-unes de mes passions",
+      photoGalleryTitle: "Les moments forts de 2024",
+      recommendationsTitle: "Ce que j'aime regarder",
     },
   };
 
@@ -226,9 +226,9 @@ function PersonalInterests() {
       url: "https://www.youtube.com/watch?v=Z7XRX1UBooQ&list=PLlwzDYw6zp2D6DxLR8zGz1i_7764DYSVQ",
     },
     {
-      img: "https://upload.wikimedia.org/wikipedia/commons/1/10/Alcibades_being_taught_by_Socrates%2C_Fran%C3%A7ois-Andr%C3%A9_Vincent.jpg",
-      title: "Alcibiades",
-      url: "https://www.youtube.com/watch?v=APWamijL6xc",
+      img: "https://yt3.googleusercontent.com/5Kngq4vxIAdfM-ekLYIq9RHWSs3KdJhx1w3WjVaOcwVnFfnkTd04rIxeYyTc28K8KicI8J-kU_U=s160-c-k-c0x00ffffff-no-rj",
+      title: "Arte",
+      url: "https://www.youtube.com/watch?v=iJd5CJMJp7A",
     },
   ];
 
@@ -289,20 +289,44 @@ function PersonalInterests() {
       titleFr: "Relisant mon roman préféré, le Comte Bélisaire",
     },
     {
-      img: require("../assets/photos/Woodshop.jpeg"),
-      titleEn: "Sometimes I like working with tools",
-      titleFr: "Parfois, j'aime travailler avec des outils",
-    },
-    {
       img: require("../assets/photos/Working-Remotely.jpeg"),
       titleEn: "Working Remotely, Krakow",
       titleFr: "Travail à distance, Cracovie",
+    },
+    {
+      img: require("../assets/photos/Luzern.jpeg"),
+      titleEn: "Luzern, Switzerland",
+      titleFr: "Luzern, Suisse",
+    },
+    {
+      img: require("../assets/photos/Painting-In-Bed.jpeg"),
+      titleEn: "Taking an art lesson",
+      titleFr: "Prendre un cours de dessin",
+    },
+    {
+      img: require("../assets/photos/Tropea-Beach.jpeg"),
+      titleEn: "Lofoten Islands, Norway",
+      titleFr: "Îles Lofoten, Norvège",
+    },
+    {
+      img: require("../assets/photos/Rome.JPEG"),
+      titleEn: "Rome, Italy",
+      titleFr: "Rome, Italy",
     },
   ];
 
   const InterestsList = ({ interests, language }) => (
     <Box mb={4}>
-      <Typography variant="h4" component="h3" gutterBottom>
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+        sx={{
+          textTransform: "uppercase",
+          color: theme.palette.primary.main,
+        }}
+      >
+        {" "}
         {content[language].interestsTitle}
       </Typography>
       <ul>
@@ -335,7 +359,15 @@ function PersonalInterests() {
 
   const PhotoGallery = ({ images, language, handleOpenModal }) => (
     <Box mb={4}>
-      <Typography variant="h4" component="h3" gutterBottom>
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+        sx={{
+          textTransform: "uppercase",
+          color: theme.palette.primary.main,
+        }}
+      >
         {content[language].photoGalleryTitle}
       </Typography>
       <ImageList variant="masonry" cols={3} gap={8}>
@@ -359,7 +391,15 @@ function PersonalInterests() {
 
   const Recommendations = ({ recommendations, language }) => (
     <Box mb={4}>
-      <Typography variant="h4" component="h3" gutterBottom>
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+        sx={{
+          textTransform: "uppercase",
+          color: theme.palette.primary.main,
+        }}
+      >
         {content[language].recommendationsTitle}
       </Typography>
       <ImageList variant="masonry" cols={3} gap={8}>
