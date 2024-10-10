@@ -59,7 +59,7 @@ function Navbar() {
             color: "#FFFFFF",
           }}
         >
-          Alan Rich
+          ALAN RICH
         </Typography>
         {isMobile ? (
           <>
