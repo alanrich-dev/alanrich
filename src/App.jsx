@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import PersonalInterests from "./components/PersonalInterests";
+import PersonalInterests from "./components/PersonalInterests/PersonalInterests";
 
 function App() {
   return (

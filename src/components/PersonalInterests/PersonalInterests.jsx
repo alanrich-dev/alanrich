@@ -9,11 +9,13 @@ import {
   Modal,
 } from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
-import Layout from "./Layout";
+import Layout from "../Layout";
 import { useTheme } from "@mui/material/styles";
-import recommendations from "../assets/recommendations";
-import content from "../assets/content";
-import interests from "../assets/interests";
+import recommendations from "../../assets/recommendations";
+import content from "../../assets/content";
+import interests from "../../assets/interests";
+import InterestsList from "./InterestsList";
+import Recommendations from "./Recommendations";
 
 const preloadImages = (images) => {
   images.forEach((image) => {
@@ -51,168 +53,168 @@ function PersonalInterests() {
   const images = useMemo(
     () => [
       {
-        img: require("../assets/photos/Company-Party.jpeg"),
+        img: require("../../assets/photos/Company-Party.jpeg"),
         titleEn: "Research Innovations Inc. Annual Party, Washington DC",
         titleFr: "Fête annuelle de Research Innovations Inc., Washington DC",
       },
       {
-        img: require("../assets/photos/Manga-Museum-Krakow.jpeg"),
+        img: require("../../assets/photos/Manga-Museum-Krakow.jpeg"),
         titleEn: "Manggha Museum, Krakow",
         titleFr: "Musée Manggha, Cracovie",
       },
       {
-        img: require("../assets/photos/Lauterbrunnen.jpeg"),
+        img: require("../../assets/photos/Lauterbrunnen.jpeg"),
         titleEn: "Lauterbrunnen, Switzerland",
         titleFr: "Lauterbrunnen, Suisse",
       },
       {
-        img: require("../assets/photos/Tropea-With-Brother.jpeg"),
+        img: require("../../assets/photos/Tropea-With-Brother.jpeg"),
         titleEn: "Chilling in Tropea with my brother.",
         titleFr: "Se détendre à Tropea avec mon frère.",
       },
       {
-        img: require("../assets/photos/Pilatus-Suisse.jpeg"),
+        img: require("../../assets/photos/Pilatus-Suisse.jpeg"),
         titleEn: "Pilatus, Switzerland",
         titleFr: "Pilatus, Suisse",
       },
       {
-        img: require("../assets/photos/Painting-In-Bed.png"),
-        titleEn: "Taking an art lesson",
-        titleFr: "Prendre un cours de dessin",
+        img: require("../../assets/photos/Painting-In-Bed.png"),
+        titleEn: "Taking an art lesson.",
+        titleFr: "Prendre un cours de dessin.",
       },
       {
-        img: require("../assets/photos/Hiking-In-Lofoten.jpeg"),
+        img: require("../../assets/photos/Hiking-In-Lofoten.jpeg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Murren-1.jpg"),
+        img: require("../../assets/photos/Murren-1.jpg"),
         titleEn: "Reading in the Alps.",
         titleFr: "Lecture dans les Alps.",
       },
       {
-        img: require("../assets/photos/Christmas-2023.jpeg"),
+        img: require("../../assets/photos/Christmas-2023.jpeg"),
         titleEn: "Christmas 2023, Chicago",
         titleFr: "Noël 2023, Chicago",
       },
       {
-        img: require("../assets/photos/Naples-Library.jpeg"),
+        img: require("../../assets/photos/Naples-Library.jpeg"),
         titleEn: "Naples, I love working from Fancy Libraries.",
         titleFr: "Naples, j'adore travailler dans de belles bibliothèques.",
       },
 
       {
-        img: require("../assets/photos/Naples-Library-1.jpg"),
+        img: require("../../assets/photos/Naples-Library-1.jpg"),
         titleEn: "Naples, I love working from Fancy Libraries.",
         titleFr: "Naples, j'adore travailler dans de belles bibliothèques.",
       },
       {
-        img: require("../assets/photos/Night-Train-To-Syracuse.jpeg"),
+        img: require("../../assets/photos/Night-Train-To-Syracuse.jpeg"),
         titleEn: "Night train to Syracuse",
         titleFr: "Train de nuit pour Syracuse",
       },
       {
-        img: require("../assets/photos/Reading-Count-Belisarius.jpeg"),
-        titleEn: "Re-reading my favorite Novel, Count Belisarius",
-        titleFr: "Relisant mon roman préféré, le Comte Bélisaire",
+        img: require("../../assets/photos/Reading-Count-Belisarius.jpeg"),
+        titleEn: "Re-reading my favorite Novel, Count Belisarius.",
+        titleFr: "Relisant mon roman préféré, le Comte Bélisaire.",
       },
       {
-        img: require("../assets/photos/Working-Remotely.jpeg"),
+        img: require("../../assets/photos/Working-Remotely.jpeg"),
         titleEn: "Working Remotely, Krakow",
         titleFr: "Travail à distance, Cracovie",
       },
       {
-        img: require("../assets/photos/Cosenza.jpeg"),
-        titleEn: "Cosenza, chilling in my grandfather's town",
-        titleFr: "Cosenza, chiller dans la ville de mon grand-père",
+        img: require("../../assets/photos/Cosenza.jpeg"),
+        titleEn: "Cosenza, chilling in my grandfather's town.",
+        titleFr: "Cosenza, chiller dans la ville de mon grand-père.",
       },
       {
-        img: require("../assets/photos/Yoga.png"),
+        img: require("../../assets/photos/Yoga.png"),
         titleEn: "Pre-run yoga",
         titleFr: "Yoga avant la course",
       },
       {
-        img: require("../assets/photos/Tropea-1.jpg"),
+        img: require("../../assets/photos/Tropea-1.jpg"),
         titleEn: "Tropea, Italy",
         titleFr: "Tropea, Italy",
       },
       {
-        img: require("../assets/photos/Tropea-2.png"),
+        img: require("../../assets/photos/Tropea-2.png"),
         titleEn: "Tropea, Italy",
         titleFr: "Tropea, Italy",
       },
       {
-        img: require("../assets/photos/Rome.png"),
+        img: require("../../assets/photos/Rome.png"),
         titleEn: "Rome, Italy",
         titleFr: "Rome, Italy",
       },
       {
-        img: require("../assets/photos/Lofoten-2.jpg"),
+        img: require("../../assets/photos/Lofoten-2.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Lofoten-3.jpg"),
+        img: require("../../assets/photos/Lofoten-3.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Lofoten-4.jpg"),
+        img: require("../../assets/photos/Lofoten-4.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Lofoten-5.jpg"),
+        img: require("../../assets/photos/Lofoten-5.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Lofoten-6.jpg"),
+        img: require("../../assets/photos/Lofoten-6.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Lofoten-7.jpg"),
+        img: require("../../assets/photos/Lofoten-7.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../assets/photos/Luzern.png"),
+        img: require("../../assets/photos/Luzern.png"),
         titleEn: "Luzern, Switzerland",
         titleFr: "Luzern, Suisse",
       },
       {
-        img: require("../assets/photos/Murren-1.jpg"),
+        img: require("../../assets/photos/Murren-1.jpg"),
         titleEn: "Murren, Switzerland",
         titleFr: "Murren, Suisse",
       },
       {
-        img: require("../assets/photos/Naples-1.jpg"),
+        img: require("../../assets/photos/Naples-1.jpg"),
         titleEn: "Naples, Italy",
         titleFr: "Naples, Italy",
       },
       {
-        img: require("../assets/photos/Matera-1.png"),
+        img: require("../../assets/photos/Matera-1.png"),
         titleEn: "Matera, Italy",
         titleFr: "Matera, Italy",
       },
       {
-        img: require("../assets/photos/Syracuse-1.jpg"),
+        img: require("../../assets/photos/Syracuse-1.jpg"),
         titleEn: "Syracuse, Italy",
         titleFr: "Syracuse, Italy",
       },
       {
-        img: require("../assets/photos/Interrailing.jpg"),
+        img: require("../../assets/photos/Interrailing.jpg"),
         titleEn: "Austrian Alps",
         titleFr: "Alpes Autrichiennes",
       },
       {
-        img: require("../assets/photos/Szimpla-Kert.jpg"),
+        img: require("../../assets/photos/Szimpla-Kert.jpg"),
         titleEn: "Szimpla Kert, Budapest. My favorite bar in Europe.",
         titleFr: "Szimpla Kert, Budapest. Mon bar préféré en Europe",
       },
       {
-        img: require("../assets/photos/Vienna-Library.jpg"),
+        img: require("../../assets/photos/Vienna-Library.jpg"),
         titleEn: "Osterreichische Nationalbibliothek, Vienna",
         titleFr: "Osterreichische Nationalbibliothek, Vienne",
       },
@@ -223,50 +225,6 @@ function PersonalInterests() {
   useEffect(() => {
     preloadImages(images);
   }, [images]);
-
-  const InterestsList = ({ interests, language }) => (
-    <Box mb={4}>
-      <Typography
-        variant="h4"
-        component="h1"
-        gutterBottom
-        sx={{
-          textTransform: "uppercase",
-          color: theme.palette.primary.main,
-        }}
-      >
-        {" "}
-        {content[language].interestsTitle}
-      </Typography>
-      <ul>
-        {interests.map((interest, index) => {
-          const { bold, normal } = interest[language];
-          return (
-            <li key={index}>
-              <Typography
-                variant="body1"
-                component="span"
-                sx={{ fontWeight: "bold" }}
-              >
-                {bold}
-              </Typography>
-              ,{" "}
-              {normal.includes("Un Gars") ? (
-                <>
-                  {language === "en"
-                    ? "currently addicted to"
-                    : "actuellement accro à"}{" "}
-                  <i>Un Gars, une fille</i>.
-                </>
-              ) : (
-                normal
-              )}
-            </li>
-          );
-        })}
-      </ul>
-    </Box>
-  );
 
   const PhotoGallery = ({ images, language, handleOpenModal }) => {
     const [visibleImages, setVisibleImages] = useState(6); // Show 6 images initially
@@ -310,49 +268,6 @@ function PersonalInterests() {
       </Box>
     );
   };
-
-  const Recommendations = ({ recommendations, language }) => (
-    <Box mb={4}>
-      <Typography
-        variant="h4"
-        component="h1"
-        gutterBottom
-        sx={{
-          textTransform: "uppercase",
-          color: theme.palette.primary.main,
-        }}
-      >
-        {content[language].recommendationsTitle}
-      </Typography>
-      <ImageList variant="masonry" cols={3} gap={8}>
-        {recommendations.map((rec, index) => (
-          <ImageListItem key={index} sx={{ cursor: "pointer" }}>
-            <a href={rec.url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={rec.img}
-                alt={rec.title}
-                style={{
-                  width: "100%",
-                  height: language === "en" ? "180px" : "200px", // Adjusted height based on language because french can be more verbose
-                  objectFit: "cover",
-                }}
-              />
-            </a>
-            <Typography
-              variant="body2"
-              component="div"
-              sx={{
-                height: "40px",
-                display: "flex",
-              }}
-            >
-              {rec.title}
-            </Typography>
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </Box>
-  );
 
   return (
     <Layout>
