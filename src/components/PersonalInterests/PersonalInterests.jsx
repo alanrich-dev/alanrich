@@ -1,13 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import {
-  Typography,
-  Box,
-  Button,
-  IconButton,
-  ImageList,
-  ImageListItem,
-  Modal,
-} from "@mui/material";
+import { Typography, Box, Button, IconButton, Modal } from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
 import Layout from "../Layout";
 import { useTheme } from "@mui/material/styles";
@@ -16,6 +8,7 @@ import content from "../../assets/content";
 import interests from "../../assets/interests";
 import InterestsList from "./InterestsList";
 import Recommendations from "./Recommendations";
+import PhotoGallery from "./PhotoGallery";
 
 const preloadImages = (images) => {
   images.forEach((image) => {
@@ -230,49 +223,6 @@ function PersonalInterests() {
   useEffect(() => {
     preloadImages(images);
   }, [images]);
-
-  const PhotoGallery = ({
-    images,
-    language,
-    handleOpenModal,
-    visibleImages,
-    handleViewMore,
-  }) => (
-    <Box mb={4}>
-      <Typography
-        variant="h4"
-        component="h1"
-        gutterBottom
-        sx={{
-          textTransform: "uppercase",
-          color: theme.palette.primary.main,
-        }}
-      >
-        {content[language].photoGalleryTitle}
-      </Typography>
-      <ImageList variant="masonry" cols={3} gap={8}>
-        {images.slice(0, visibleImages).map((item, index) => (
-          <ImageListItem
-            key={index}
-            onClick={() => handleOpenModal(item)}
-            sx={{ cursor: "pointer" }}
-          >
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={language === "en" ? item.titleEn : item.titleFr}
-              loading="lazy"
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-      {visibleImages < images.length && (
-        <Button onClick={handleViewMore} variant="contained" sx={{ mt: 2 }}>
-          View More Images
-        </Button>
-      )}
-    </Box>
-  );
 
   return (
     <Layout>
