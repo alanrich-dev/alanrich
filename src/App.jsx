@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import PersonalInterests from "./components/PersonalInterests/PersonalInterests";
+import PersonalInterestsWrapper from "./components/PersonalInterests/PersonalInterestsWrapper";
 
 function App() {
   return (
@@ -19,7 +19,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/personal-interests" element={<PersonalInterests />} />
+          <Route
+            path="/personal-interests"
+            element={<PersonalInterestsWrapper />}
+          />
           <Route path="/work-sample" />
           <Route path="/Github" />
         </Routes>

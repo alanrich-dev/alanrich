@@ -20,11 +20,10 @@ const PhotoGallery = ({
   return (
     <Box mb={4}>
       <Typography
-        variant="h4"
+        variant="h5"
         component="h1"
         gutterBottom
         sx={{
-          textTransform: "uppercase",
           color: theme.palette.primary.main,
         }}
       >
