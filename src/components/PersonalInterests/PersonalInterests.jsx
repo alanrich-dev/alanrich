@@ -30,6 +30,7 @@ function PersonalInterests() {
   const [openModal, setOpenModal] = useState(false);
   const [modalImage, setModalImage] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [visibleImages, setVisibleImages] = useState(6); // Show 6 images initially
 
   // Toggle between English and French
   const handleToggleLanguage = () => {
@@ -226,8 +227,13 @@ function PersonalInterests() {
     preloadImages(images);
   }, [images]);
 
-  const PhotoGallery = ({ images, language, handleOpenModal }) => {
-    const [visibleImages, setVisibleImages] = useState(6); // Show 6 images initially
+  const PhotoGallery = ({
+    images,
+    language,
+    handleOpenModal,
+    visibleImages,
+    setVisibleImages,
+  }) => {
     const handleViewMore = () => {
       setVisibleImages(visibleImages + 6); // Load 6 more images each time
     };
@@ -340,6 +346,8 @@ function PersonalInterests() {
           images={images}
           language={language}
           handleOpenModal={handleOpenModal}
+          visibleImages={visibleImages}
+          setVisibleImages={setVisibleImages}
         />
 
         {/* Modal for Image */}
