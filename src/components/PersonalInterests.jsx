@@ -153,8 +153,10 @@ function PersonalInterests() {
               ,{" "}
               {normal.includes("Un Gars") ? (
                 <>
-                  {" "}
-                  currently addicted to <i>Un Gars, une fille</i>.
+                  {language === "en"
+                    ? "currently addicted to"
+                    : "actuellement accro à"}{" "}
+                  <i>Un Gars, une fille</i>.
                 </>
               ) : (
                 normal
@@ -325,8 +327,8 @@ function PersonalInterests() {
               bgcolor: "background.paper",
               boxShadow: 24,
               p: 2,
-              maxWidth: "90%",
-              maxHeight: "90%",
+              maxWidth: "80%",
+              maxHeight: "80%",
               overflow: "auto",
             }}
           >
