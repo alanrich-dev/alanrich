@@ -20,7 +20,7 @@ const PhotoGallery = ({
   return (
     <Box mb={4}>
       <Typography
-        variant="h5"
+        variant="h4"
         component="h1"
         gutterBottom
         sx={{
