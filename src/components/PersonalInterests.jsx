@@ -329,7 +329,7 @@ function PersonalInterests() {
               p: 2,
               maxWidth: "80%",
               maxHeight: "80%",
-              overflow: "auto",
+              overflow: "hidden",
             }}
           >
             <IconButton
@@ -339,27 +339,45 @@ function PersonalInterests() {
                 position: "absolute",
                 right: 8,
                 top: 8,
-                color: (theme) => theme.palette.grey[500],
+                color: (theme) => theme.palette.common.white,
               }}
             >
               <CloseIcon />
             </IconButton>
             {modalImage && (
-              <img
-                src={modalImage}
-                alt="Modal"
-                style={{ width: "100%", height: "auto" }}
-              />
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
+                <img
+                  src={modalImage}
+                  alt="Modal"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    maxHeight: "60vh",
+                    objectFit: "contain",
+                    borderRadius: "8px",
+                  }}
+                />
+              </Box>
             )}
             <Typography
               variant="subtitle1"
+              component="h2"
               sx={{
-                mt: 2,
-                height: "40px",
+                fontWeight: "bold",
+                textTransform: "capitalize",
                 display: "flex",
-                alignItems: "center",
                 justifyContent: "center",
-                fontSize: "1rem", // Explicitly set font size for control
+                alignItems: "center",
+                marginTop: "12px",
+                minHeight: "28px",
               }}
             >
               {selectedItem &&
