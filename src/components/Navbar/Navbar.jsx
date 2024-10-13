@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 
-function Navbar() {
+function Navbar({ tabs }) {
   const location = useLocation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
