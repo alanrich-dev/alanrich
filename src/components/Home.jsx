@@ -13,6 +13,7 @@ function Home() {
       <Box
         sx={{
           paddingTop: { xs: 4, sm: 6, md: 8 },
+          paddingBottom: { xs: 4, sm: 6, md: 8 },
         }}
       >
         {language === "en" ? (
@@ -28,7 +29,13 @@ function Home() {
             >
               Alan Rich
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography
+              variant="body1"
+              paragraph
+              sx={{
+                paddingBottom: 2,
+              }}
+            >
               I'm a software engineer with over five years of experience
               developing React applications. In my previous career, I was an
               organic chemist developing enantiomer-specifc organocatalytic

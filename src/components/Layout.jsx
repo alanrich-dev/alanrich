@@ -1,11 +1,12 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import ProfileCard from "./ProfileCard";
 import { useTheme } from "@mui/material/styles";
 
 const Layout = ({ children }) => {
   const theme = useTheme();
-  const navbarHeight = 64; //TODO: May need adjustment
+  const navbarHeight = 64;
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
@@ -14,17 +15,20 @@ const Layout = ({ children }) => {
         height: `calc(100vh - ${navbarHeight}px)`,
         marginTop: `${navbarHeight}px`,
         display: "flex",
+        flexDirection: isMobile ? "column" : "row",
+        overflowY: isMobile ? "auto" : "hidden", // Scroll entire layout only on mobile
       }}
     >
       {/* Left Column: Profile Card */}
-
       <Box
         sx={{
-          width: { xs: "100%", md: "25%" }, // This adjusts the width nicely
+          width: { xs: "100%", md: "25%" }, // Full width on mobile, 25% on larger screens
           backgroundColor: theme.palette.primary.main,
-          position: { xs: "static", md: "fixed" },
-          height: `calc(100vh - ${navbarHeight}px)`,
-          overflowY: "auto",
+          position: { xs: "static", md: "fixed" }, // Fixed on larger screens, static on mobile
+          height: isMobile ? "auto" : `calc(100vh - ${navbarHeight}px)`,
+          overflowY: isMobile ? "visible" : "visible", // Non-scrollable on all views
+          order: isMobile ? 2 : 0, // Move to bottom on mobile view
+          zIndex: isMobile ? "auto" : 1, // Ensure left column is below right column on desktop
         }}
       >
         <ProfileCard />
@@ -33,20 +37,22 @@ const Layout = ({ children }) => {
       {/* Right Column: Dynamic Content */}
       <Box
         sx={{
-          marginLeft: { xs: 0, md: "25%" },
-          height: `calc(100vh - ${navbarHeight}px)`,
-          overflowY: "auto", // Ensures only the right column with text is scrollable
-          backgroundColor: theme.palette.primary.background,
-          py: { xs: 4, sm: 6, md: 8 },
-          px: { xs: 2, sm: 4, md: 6, lg: 8 },
+          marginLeft: { xs: 0, md: "25%" }, // Only apply margin on larger screens when ProfileCard is on the left
+          height: isMobile ? "auto" : `calc(100vh - ${navbarHeight}px)`,
+          backgroundColor: theme.palette.background.default,
+          paddingTop: { xs: 2, sm: 6, md: 8 },
+          paddingBottom: { xs: 4, sm: 6, md: 8 },
+          px: { xs: 4, sm: 4, md: 6, lg: 8 },
           flexGrow: 1,
           display: "flex",
-          justifyContent: "center", // Center the text content horizontally
+          flexDirection: "column",
+          overflowY: isMobile ? "visible" : "auto", // Scrollable on desktop only
+          alignItems: "center",
         }}
       >
         <Box
           sx={{
-            maxWidth: "800px",
+            maxWidth: "700px",
             width: "100%",
           }}
         >
