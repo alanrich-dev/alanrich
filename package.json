@@ -3,6 +3,9 @@
   "homepage": "https://alanrich.dev",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.9.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
