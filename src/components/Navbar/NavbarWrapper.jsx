@@ -14,7 +14,7 @@ function NavbarWrapper() {
     { label: "Education", path: "/education" },
     {
       label: "Work Sample",
-      path: "https://alanrich.dev/work-sample",
+      path: "https://anabasis.alanrich.dev",
       external: true,
     },
     { label: "Github", path: "https://github.com/alanrich", external: true },
