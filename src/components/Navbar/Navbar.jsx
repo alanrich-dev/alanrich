@@ -19,19 +19,6 @@ function Navbar() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const tabs = [
-    { label: "About", path: "/" },
-    { label: "Experience", path: "/experience" },
-    { label: "Education", path: "/education" },
-    {
-      label: "Work Sample",
-      path: "https://alanrich.dev/work-sample",
-      external: true,
-    },
-    { label: "Github", path: "https://github.com/alanrich", external: true },
-    { label: "Personal Interests", path: "/personal-interests" },
-  ];
-
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleMenuOpen = (event) => {
