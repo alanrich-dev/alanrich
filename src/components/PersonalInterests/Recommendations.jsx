@@ -80,7 +80,7 @@ const Recommendations = ({ recommendations, language }) => {
                 boxSizing: "border-box",
                 borderBottom: 1,
                 borderColor: theme.palette.divider,
-                minHeight: isMobile ? "auto" : "220px", // Ensure consistent height
+                minHeight: isMobile ? "auto" : "220px", // Ensure consistent height, move away from pinterest style photo gallery? outdated aesthetic?
                 ...(index < cols && {
                   borderTop: `1px solid ${theme.palette.divider}`,
                 }),

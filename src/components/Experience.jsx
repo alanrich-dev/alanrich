@@ -40,14 +40,14 @@ function Experience() {
         "I began my career as a technical writer creating scientific and pharmaceutical documentation for clients I found through Upwork. However, I soon discovered a higher demand for software-related technical writing, which led to a gradual transition in my focus. Over time, I honed my ability to write clear, concise, and accurate software documentation, learning to communicate complex technical concepts effectively. This shift allowed me to gain familiarity with various software development practices, and I became proficient at producing high-quality documentation that met the needs of developers and users alike.",
     },
     {
-      date: "2013 - 2014",
+      date: "2014 - 2013",
       title: "Illinois Institute of Technology",
       subtitle: "Graduate Research Assistant",
       description:
         "I conducted genomic analysis of human colorectal cancer cells affected by microsatellite mutations in the BaxΔ2 gene. This role involved performing lab techniques such as DNA extraction, PCR amplification, gel electrophoresis, and sequencing to analyze genetic mutations. While I gained valuable experience in molecular biology and cancer research, I eventually realized that academic research was not my calling. This experience, however, deepened my analytical skills and understanding of scientific research methodologies.",
     },
     {
-      date: "2012 - 2013",
+      date: "2013 - 2012",
       title: "Nestlé",
       subtitle: "Chemist",
       description:

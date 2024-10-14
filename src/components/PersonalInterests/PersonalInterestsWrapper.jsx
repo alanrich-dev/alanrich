@@ -18,10 +18,10 @@ function PersonalInterestsWrapper() {
   const [openModal, setOpenModal] = useState(false);
   const [modalImage, setModalImage] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [visibleImages, setVisibleImages] = useState(6); // Show 6 images initially
+  const [visibleImages, setVisibleImages] = useState(6);
 
   const handleViewMore = () => {
-    setVisibleImages(visibleImages + 6); // Load 6 more images each time
+    setVisibleImages(visibleImages + 6);
   };
 
   // Toggle between English and French
@@ -81,7 +81,7 @@ function PersonalInterestsWrapper() {
         titleFr: "Îles Lofoten, Norvège",
       },
       {
-        img: require("../../assets/photos/Murren-1.jpg"),
+        img: require("../../assets/photos/Reading-In-The-Alps.jpg"),
         titleEn: "Reading in the Alps.",
         titleFr: "Lecture dans les Alps.",
       },
