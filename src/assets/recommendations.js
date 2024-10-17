@@ -7,7 +7,7 @@ const recommendations = [
   {
     img: "https://deadline.com/wp-content/uploads/2016/07/peepshow.jpg?w=665",
     title: "Peep Show",
-    url: "https://www.youtube.com/watch?v=uVu9no1FH58",
+    url: "https://www.youtube.com/watch?v=aHJjEHcHUhc",
   },
   {
     img: "https://yt3.googleusercontent.com/ytc/AIdro_l_DnztzuTluEh4JaE7eENqzeOdqs6aUxgkb7C4kdpWnY8=s160-c-k-c0x00ffffff-no-rj",
