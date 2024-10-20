@@ -6,7 +6,7 @@ import {
   Star as StarIcon,
   Email as EmailIcon,
   Phone as PhoneIcon,
-  Language as LanguageIcon, // Import the Language icon
+  Language as LanguageIcon,
 } from "@mui/icons-material";
 import profilePhoto from "../assets/profile-photo-2.jpg";
 import { useTheme } from "@mui/material/styles";
@@ -101,7 +101,6 @@ function ProfileCard() {
           </Typography>
         </Box>
 
-        {/* New section for DecouvrirPatrimoine.fr */}
         <Box display="flex" alignItems="center" gap="8px">
           <LanguageIcon sx={{ color: theme.palette.icon.main }} />
           <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>

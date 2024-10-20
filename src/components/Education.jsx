@@ -39,8 +39,26 @@ function Education() {
       date: "2013 - 2014",
       title: "Illinois Institute of Technology",
       subtitle: "Molecular Biology (PhD Program)",
-      description:
-        "I was briefly enrolled in a doctoral program but decided that academic research was not my calling. During my studies, I performed genomic analysis of human colorectal cancer cells affected by microsatellite mutations in the BaxΔ2 gene.",
+      description: (
+        <>
+          I was briefly enrolled in a doctoral program but decided that academic
+          research was not my calling. During my studies, I performed genomic
+          analysis of human colorectal cancer cells affected by microsatellite
+          mutations in the{" "}
+          <Typography
+            component="a"
+            href="https://pubmed.ncbi.nlm.nih.gov/24842234/"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ color: "blue", textDecoration: "underline" }}
+          >
+            BaxΔ2 gene
+          </Typography>
+          . Though I was not credited with authorship in the paper that was
+          published, the link provides details about the research I contributed
+          to as a doctoral student.
+        </>
+      ),
     },
   ];
 

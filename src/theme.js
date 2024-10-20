@@ -3,7 +3,7 @@ import { grey } from "@mui/material/colors";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Inter, Arial, sans-serif",
+    fontFamily: "Inter, sans-serif",
     h2: {
       fontWeight: 900,
       fontSize: "3.75rem",
