@@ -38,7 +38,7 @@ function Home() {
             >
               I'm a software engineer with over five years of experience
               developing React applications for Fortune 500 corporations and
-              national security contractors. A sample of my work can be found at
+              national security contractors. A sample of my work can be found at{" "}
               <a
                 href="https://DecouvrirPatrimoine.fr"
                 target="_blank"
@@ -76,9 +76,9 @@ function Home() {
               Je suis ingénieur logiciel avec plus de cinq ans d'expérience dans
               le développement d'applications React pour des entreprises du
               Fortune 500 et des contractants en sécurité nationale. Un exemple
-              de mon travail peut être consulté sur
+              de mon travail peut être consulté sur{" "}
               <a
-                href="https://DecouvrirPatrimoine.fr"
+                href="https://www.decouvrirpatrimoine.fr"
                 target="_blank"
                 rel="noopener noreferrer"
               >

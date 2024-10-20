@@ -21,7 +21,7 @@ function Education() {
             href="https://doi.org/10.1021/ed085p1531"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "inherit", textDecoration: "underline" }}
+            sx={{ color: "blue", textDecoration: "underline" }}
           >
             Journal of Chemical Education, 85 (2008) DOI:10.1021/ed085p1531
           </Typography>

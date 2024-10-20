@@ -6,6 +6,7 @@ import {
   Star as StarIcon,
   Email as EmailIcon,
   Phone as PhoneIcon,
+  Language as LanguageIcon, // Import the Language icon
 } from "@mui/icons-material";
 import profilePhoto from "../assets/profile-photo-2.jpg";
 import { useTheme } from "@mui/material/styles";
@@ -20,7 +21,7 @@ function ProfileCard() {
         overflow: "hidden",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between", // TODO: should we remove?
+        justifyContent: "space-between",
         height: "100%",
         backgroundColor: theme.palette.primary.main,
       }}
@@ -31,7 +32,6 @@ function ProfileCard() {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          //overflow: "hidden", // To control scroll
         }}
       >
         <Box
@@ -40,9 +40,9 @@ function ProfileCard() {
           alt="Profile"
           sx={{
             width: "100%",
-            height: "auto", // for image scaling
-            display: "block", // for image scaling
-            objectFit: "contain", // Ensures the image is never cropped
+            height: "auto",
+            display: "block",
+            objectFit: "contain",
           }}
         />
       </Box>
@@ -60,6 +60,7 @@ function ProfileCard() {
         }}
       >
         <Typography variant="h7">General Information</Typography>
+
         <Box display="flex" alignItems="center" gap="8px">
           <EditIcon sx={{ color: theme.palette.icon.main }} />
           <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
@@ -87,34 +88,34 @@ function ProfileCard() {
         </Box>
 
         <Box display="flex" alignItems="center" gap="8px">
-          <StarIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
-            Date of Birth:{" "}
-            <Typography
-              component="span"
-              sx={{ color: theme.palette.common.white }}
-            >
-              July 13, 1983
-            </Typography>
-          </Typography>
-        </Box>
-
-        <Box display="flex" alignItems="center" gap="8px">
           <EmailIcon sx={{ color: theme.palette.icon.main }} />
           <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             rich.alan@proton.me
           </Typography>
         </Box>
 
-        <Box
-          display="flex"
-          alignItems="center"
-          gap="8px"
-          sx={{ marginBottom: 0 }}
-        >
+        <Box display="flex" alignItems="center" gap="8px">
           <PhoneIcon sx={{ color: theme.palette.icon.main }} />
           <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
             07 45 64 16 17
+          </Typography>
+        </Box>
+
+        {/* New section for DecouvrirPatrimoine.fr */}
+        <Box display="flex" alignItems="center" gap="8px">
+          <LanguageIcon sx={{ color: theme.palette.icon.main }} />
+          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
+            <a
+              href="https://www.decouvrirpatrimoine.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: theme.palette.common.white,
+                textDecoration: "none",
+              }}
+            >
+              DecouvrirPatrimoine.fr
+            </a>
           </Typography>
         </Box>
       </Box>

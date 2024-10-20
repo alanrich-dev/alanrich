@@ -132,6 +132,11 @@ function PersonalInterestsWrapper() {
         titleFr: "Yoga avant la course",
       },
       {
+        img: require("../../assets/photos/kvalvika-beach-2.jpg"),
+        titleEn: "Hiking Mount Ryten, Norway",
+        titleFr: "À mi-chemin vers le sommet du Mont Ryten, Norvège",
+      },
+      {
         img: require("../../assets/photos/Tropea-1.jpg"),
         titleEn: "Tropea, Italy",
         titleFr: "Tropea, Italy",
@@ -185,16 +190,6 @@ function PersonalInterestsWrapper() {
         img: require("../../assets/photos/Alesund.jpg"),
         titleEn: "Ålesund, Norway",
         titleFr: "Ålesund, Norvège",
-      },
-      {
-        img: require("../../assets/photos/kvalvika-beach-2.jpg"),
-        titleEn: "Kvalvika Beach, Norway",
-        titleFr: "Plage de Kvalvika, Norvège",
-      },
-      {
-        img: require("../../assets/photos/kvalvika-beach-2.jpg"),
-        titleEn: "Hiking Mount Ryten, Norway",
-        titleFr: "À mi-chemin vers le sommet du Mont Ryten, Norvège",
       },
       {
         img: require("../../assets/photos/trail-running.jpg"),

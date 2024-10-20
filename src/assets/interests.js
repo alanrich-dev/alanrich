@@ -41,20 +41,25 @@ const interests = [
     },
   },
   {
-    en: { bold: "Literature", normal: "particularly the Russian novelists." },
+    en: {
+      bold: "Literature",
+      normal:
+        "Pushkin, Chekkov, Melville, Tagore, Kazantzakis are my favorites.",
+    },
     fr: {
       bold: "Littérature",
-      normal: "en particulier les romanciers russes.",
+      normal:
+        "Pouchkine, Tchekhov, Melville, Tagore, Kazantzakis sont mes préférés.",
     },
   },
   {
     en: {
       bold: "Byzantine History",
-      normal: "fascinated by its mysterious allure.",
+      normal: "from Belisarius to Anna Komnene, so many great stories.",
     },
     fr: {
       bold: "Histoire Byzantine",
-      normal: "fasciné par son allure mystérieuse.",
+      normal: "de Bélisaire à Anne Comnène, tant de grandes histoires.",
     },
   },
   {
