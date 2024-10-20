@@ -23,8 +23,6 @@ function App() {
             path="/personal-interests"
             element={<PersonalInterestsWrapper />}
           />
-          <Route path="/work-sample" />
-          <Route path="/Github" />
         </Routes>
       </Router>
     </ThemeProvider>
