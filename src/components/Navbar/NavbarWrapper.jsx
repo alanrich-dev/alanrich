@@ -14,7 +14,7 @@ function NavbarWrapper() {
     { label: "Education", path: "/education" },
     {
       label: "Work Sample",
-      path: "http://www.decouvrirpatrimoine.fr",
+      path: "https://www.decouvrirpatrimoine.fr",
       external: true,
     },
     { label: "Github", path: "https://github.com/alanrich", external: true },

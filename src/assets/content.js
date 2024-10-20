@@ -2,8 +2,8 @@ const content = {
   en: {
     heading: "How I spend my free time",
     subheading: "Personal Interests",
-    introduction: `The Romans had a concept of leisure that resonates well with my
-      inclinations for how to spend my time outside of work, <i>Otium cum Dignitate</i>,
+    introduction: `The Romans had a concept of leisure that resonates well with my 
+      inclinations regarding how I spend my time beyond works, <i>Otium cum Dignitate</i>,
       leisure with dignity, the notion that leisure well spent is leisure that
       enriches the mind and soul. For me, the most enjoyable moments are those
       spent either laughing or furthering my understanding of the world and how it
@@ -27,9 +27,9 @@ const content = {
   fr: {
     heading: "Mes Passe-temps",
     subheading: "Intérêts Personnels",
-    introduction: `Les Romains avaient un concept de loisirs qui résonne bien avec
-      mes inclinations sur la façon de passer mon temps en dehors du
-      travail, <i>Otium cum Dignitate</i>, le loisir avec dignité,
+    introduction: `Les Romains avaient une conception des loisirs qui résonne 
+      bien avec mes inclinations quant à la manière dont je passe mon temps hors 
+      du travail. <i>Otium cum Dignitate</i>, le loisir avec dignité,
       l'idée que le loisir bien utilisé est celui qui enrichit l'esprit
       et l'âme. Pour moi, les moments les plus agréables sont ceux
       passés à rire ou à approfondir ma compréhension du monde et de la
