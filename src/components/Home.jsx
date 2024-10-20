@@ -40,7 +40,7 @@ function Home() {
               developing React applications for Fortune 500 corporations and
               national security contractors. A sample of my work can be found at{" "}
               <a
-                href="https://DecouvrirPatrimoine.fr"
+                href="https://www.decouvrirpatrimoine.fr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
