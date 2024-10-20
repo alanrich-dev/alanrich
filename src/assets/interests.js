@@ -2,11 +2,12 @@ const interests = [
   {
     en: {
       bold: "Wild Camping",
-      normal: "especially in the Lofoten Islands of Norway.",
+      normal:
+        "especially in the inexhaustible allure of Norway's Lofoten Islands.",
     },
     fr: {
       bold: "Camping Sauvage",
-      normal: "surtout dans les îles Lofoten en Norvège.",
+      normal: "surtout dans l'allure inépuisable des îles Lofoten en Norvège.",
     },
   },
   {

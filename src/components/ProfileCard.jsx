@@ -7,7 +7,7 @@ import {
   Email as EmailIcon,
   Phone as PhoneIcon,
 } from "@mui/icons-material";
-import profilePhoto from "../assets/profile-photo.jpg";
+import profilePhoto from "../assets/profile-photo-2.jpg";
 import { useTheme } from "@mui/material/styles";
 
 function ProfileCard() {

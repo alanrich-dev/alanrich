@@ -66,6 +66,11 @@ function PersonalInterestsWrapper() {
         titleFr: "Se détendre à Tropea avec mon frère.",
       },
       {
+        img: require("../../assets/photos/andalsnes-1.jpg"),
+        titleEn: "Hiking in Åndalsnes, Norway.",
+        titleFr: "Randonnée à Åndalsnes, Norvège.",
+      },
+      {
         img: require("../../assets/photos/Pilatus-Suisse.jpeg"),
         titleEn: "Pilatus, Switzerland",
         titleFr: "Pilatus, Suisse",
@@ -168,6 +173,61 @@ function PersonalInterestsWrapper() {
       },
       {
         img: require("../../assets/photos/Lofoten-7.jpg"),
+        titleEn: "Lofoten Islands, Norway",
+        titleFr: "Îles Lofoten, Norvège",
+      },
+      {
+        img: require("../../assets/photos/kvalvika-beach.jpg"),
+        titleEn: "Kvalvika Beach, Norway",
+        titleFr: "Plage de Kvalvika, Norvège",
+      },
+      {
+        img: require("../../assets/photos/Alesund.jpg"),
+        titleEn: "Ålesund, Norway",
+        titleFr: "Ålesund, Norvège",
+      },
+      {
+        img: require("../../assets/photos/kvalvika-beach-2.jpg"),
+        titleEn: "Kvalvika Beach, Norway",
+        titleFr: "Plage de Kvalvika, Norvège",
+      },
+      {
+        img: require("../../assets/photos/kvalvika-beach-2.jpg"),
+        titleEn: "Hiking Mount Ryten, Norway",
+        titleFr: "À mi-chemin vers le sommet du Mont Ryten, Norvège",
+      },
+      {
+        img: require("../../assets/photos/trail-running.jpg"),
+        titleEn: "Trail running in Hellesylt, Norway",
+        titleFr: "Course de trail à Hellesylt, Norvège",
+      },
+      {
+        img: require("../../assets/photos/Geirangerfjord-1.jpg"),
+        titleEn: "Geirangerfjord, Norway",
+        titleFr: "Geirangerfjord, Norvège",
+      },
+      {
+        img: require("../../assets/photos/Lofoten-9.jpg"),
+        titleEn: "Lofoten Islands, Norway",
+        titleFr: "Îles Lofoten, Norvège",
+      },
+      {
+        img: require("../../assets/photos/andalsnes.jpg"),
+        titleEn: "Åndalsnes, Norway",
+        titleFr: "Åndalsnes, Norvège",
+      },
+      {
+        img: require("../../assets/photos/Lofoten-8.jpg"),
+        titleEn: "Lofoten Islands, Norway",
+        titleFr: "Îles Lofoten, Norvège",
+      },
+      {
+        img: require("../../assets/photos/goats-in-norway.jpg"),
+        titleEn: "Goats in Geiranger, Norway",
+        titleFr: "Chèvres à Geiranger, Norvège",
+      },
+      {
+        img: require("../../assets/photos/Lofoten-10.jpg"),
         titleEn: "Lofoten Islands, Norway",
         titleFr: "Îles Lofoten, Norvège",
       },
