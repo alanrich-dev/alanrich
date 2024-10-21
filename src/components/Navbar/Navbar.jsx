@@ -115,7 +115,7 @@ function Navbar({ tabs }) {
 
             {/* CV Tab (direct link to PDF outside of SPA) */}
             <Tab
-              label="Resumé"
+              label="CV"
               component="a"
               href="/Resume.pdf"
               target="_blank"
