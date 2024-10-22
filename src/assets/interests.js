@@ -36,7 +36,7 @@ const interests = [
       normal: "slowly working through the Platonic Dialogues.",
     },
     fr: {
-      bold: "Philosophie classique",
+      bold: "Philosophie Classique",
       normal: "parcourant lentement les dialogues platoniciens.",
     },
   },
