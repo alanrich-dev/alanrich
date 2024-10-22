@@ -77,7 +77,7 @@ const interests = [
   {
     en: {
       bold: "Neoclassical Art",
-      normal: "Jacques-Louis David is my favorite post-renaissance artist",
+      normal: "Jacques-Louis David is my favorite post-renaissance artist.",
     },
     fr: {
       bold: "Art Néoclassique",
