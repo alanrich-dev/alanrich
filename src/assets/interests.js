@@ -42,6 +42,18 @@ const interests = [
   },
   {
     en: {
+      bold: "French Philosophy",
+      normal:
+        "I'm a Rousseauiste, and I think his work is astongishly prescient.",
+    },
+    fr: {
+      bold: "Philosophie Française",
+      normal:
+        "je suis un Rousseauiste, son travail est étonnamment prémonitoire.",
+    },
+  },
+  {
+    en: {
       bold: "Literature",
       normal:
         "Pushkin, Chekkov, Melville, Tagore, Kazantzakis are my favorites.",
