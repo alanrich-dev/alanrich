@@ -76,7 +76,18 @@ const interests = [
   },
   {
     en: {
-      bold: "Exploring Roman Ruins",
+      bold: "Neoclassical Art",
+      normal: "Jacques-Louis David is my favorite post-renaissance artist",
+    },
+    fr: {
+      bold: "Art Néoclassique",
+      normal:
+        "Jacques-Louis David est mon artiste préféré de l'après-Renaissance.",
+    },
+  },
+  {
+    en: {
+      bold: "Exploring Greek & Roman Ruins",
       normal: "my profile photo is from Herculaneum.",
     },
     fr: {
