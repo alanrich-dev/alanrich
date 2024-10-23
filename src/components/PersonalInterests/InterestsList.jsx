@@ -24,7 +24,7 @@ const InterestsList = ({ interests, language }) => {
               <Typography
                 variant="body1"
                 component="span"
-                sx={{ fontWeight: "bold" }}
+                sx={{ fontWeight: "bold", lineHeight: 1.8 }}
               >
                 {bold}
               </Typography>
