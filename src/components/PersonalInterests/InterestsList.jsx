@@ -2,7 +2,11 @@ import React from "react";
 import { Typography, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-const InterestsList = ({ interests, language, personalInterestsContent }) => {
+const InterestsList = ({
+  language,
+  personalInterestsContent,
+  personalInterestsItemized,
+}) => {
   const theme = useTheme();
 
   return (
@@ -19,7 +23,7 @@ const InterestsList = ({ interests, language, personalInterestsContent }) => {
         {personalInterestsContent[language].interestsTitle}
       </Typography>
       <ul>
-        {interests.map((interest, index) => {
+        {personalInterestsItemized.map((interest, index) => {
           const { bold, normal } = interest[language];
           return (
             <li key={index}>

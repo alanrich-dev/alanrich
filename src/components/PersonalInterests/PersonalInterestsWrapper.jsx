@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useTheme } from "@mui/material/styles";
 import recommendations from "../../assets/content/recommendations";
 import personalInterestsContent from "../../assets/content/personalInterestsContent";
-import interests from "../../assets/content/interests";
+import personalInterestsItemized from "../../assets/content/personalInterestsItemized";
 import PersonalInterests from "./PersonalInterests";
 
 const preloadImages = (personalPhotos) => {
@@ -158,7 +158,7 @@ function PersonalInterestsWrapper() {
       theme={theme}
       language={language}
       personalInterestsContent={personalInterestsContent}
-      interests={interests}
+      personalInterestsItemized={personalInterestsItemized}
       recommendations={recommendations}
       personalPhotos={personalPhotos}
       handleToggleLanguage={handleToggleLanguage}

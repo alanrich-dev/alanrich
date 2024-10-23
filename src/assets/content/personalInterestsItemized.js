@@ -1,4 +1,4 @@
-const interests = [
+const personalInterestsItemized = [
   {
     en: {
       bold: "Wild Camping",
@@ -117,4 +117,4 @@ const interests = [
   },
 ];
 
-export default interests;
+export default personalInterestsItemized;

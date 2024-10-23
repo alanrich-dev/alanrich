@@ -10,7 +10,7 @@ function PersonalInterests({
   theme,
   language,
   personalInterestsContent,
-  interests,
+  personalInterestsItemized,
   recommendations,
   personalPhotos,
   handleToggleLanguage,
@@ -81,9 +81,9 @@ function PersonalInterests({
 
         {/* Interests List */}
         <InterestsList
-          interests={interests}
           language={language}
           personalInterestsContent={personalInterestsContent}
+          personalInterestsItemized={personalInterestsItemized}
         />
 
         {/* Photo Gallery */}
