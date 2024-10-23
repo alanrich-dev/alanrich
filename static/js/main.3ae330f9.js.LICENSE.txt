@@ -4,6 +4,8 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*! MIT License © Sindre Sorhus */
+
 /**
  * @license React
  * react-dom.production.min.js
