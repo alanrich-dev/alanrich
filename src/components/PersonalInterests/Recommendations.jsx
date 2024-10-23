@@ -11,7 +11,7 @@ import {
   CardContent,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import content from "../../assets/content";
+import personalInterestsContent from "../../assets/content/personalInterestsContent";
 
 const Recommendations = ({ recommendations, language }) => {
   const theme = useTheme();
@@ -43,7 +43,7 @@ const Recommendations = ({ recommendations, language }) => {
           paddingTop: 2,
         }}
       >
-        {content[language].recommendationsTitle}
+        {personalInterestsContent[language].recommendationsTitle}
       </Typography>
 
       <ImageList

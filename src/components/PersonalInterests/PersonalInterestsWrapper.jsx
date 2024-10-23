@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useTheme } from "@mui/material/styles";
-import recommendations from "../../assets/recommendations";
-import content from "../../assets/content";
-import interests from "../../assets/interests";
+import recommendations from "../../assets/content/recommendations";
+import personalInterestsContent from "../../assets/content/personalInterestsContent";
+import interests from "../../assets/content/interests";
 import PersonalInterests from "./PersonalInterests";
 
-const preloadImages = (images) => {
-  images.forEach((image) => {
+const preloadImages = (personalPhotos) => {
+  personalPhotos.forEach((image) => {
     const img = new Image();
     img.src = image.img;
   });
@@ -18,11 +18,6 @@ function PersonalInterestsWrapper() {
   const [openModal, setOpenModal] = useState(false);
   const [modalImage, setModalImage] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [visibleImages, setVisibleImages] = useState(6);
-
-  const handleViewMore = () => {
-    setVisibleImages(visibleImages + 6);
-  };
 
   // Toggle between English and French
   const handleToggleLanguage = () => {
@@ -43,7 +38,7 @@ function PersonalInterestsWrapper() {
     setSelectedItem(null);
   };
 
-  const images = useMemo(
+  const personalPhotos = useMemo(
     () => [
       {
         img: require("../../assets/photos/andalsnes-1.jpg"),
@@ -155,19 +150,17 @@ function PersonalInterestsWrapper() {
   );
 
   useEffect(() => {
-    preloadImages(images);
-  }, [images]);
+    preloadImages(personalPhotos);
+  }, [personalPhotos]);
 
   return (
     <PersonalInterests
       theme={theme}
       language={language}
-      content={content}
+      personalInterestsContent={personalInterestsContent}
       interests={interests}
       recommendations={recommendations}
-      images={images}
-      visibleImages={visibleImages}
-      handleViewMore={handleViewMore}
+      personalPhotos={personalPhotos}
       handleToggleLanguage={handleToggleLanguage}
       handleOpenModal={handleOpenModal}
       openModal={openModal}

@@ -9,12 +9,10 @@ import PhotoGallery from "./PhotoGallery";
 function PersonalInterests({
   theme,
   language,
-  content,
+  personalInterestsContent,
   interests,
   recommendations,
-  images,
-  visibleImages,
-  handleViewMore,
+  personalPhotos,
   handleToggleLanguage,
   handleOpenModal,
   openModal,
@@ -54,7 +52,7 @@ function PersonalInterests({
               paddingTop: { xs: 4, sm: 4, md: 4 },
             }}
           >
-            {content[language].heading}
+            {personalInterestsContent[language].heading}
           </Typography>
 
           <Typography
@@ -66,7 +64,7 @@ function PersonalInterests({
               color: theme.palette.primary.main,
             }}
           >
-            {content[language].subheading}
+            {personalInterestsContent[language].subheading}
           </Typography>
         </Box>
 
@@ -75,20 +73,24 @@ function PersonalInterests({
           <Typography
             variant="body1"
             paragraph
-            dangerouslySetInnerHTML={{ __html: content[language].introduction }}
+            dangerouslySetInnerHTML={{
+              __html: personalInterestsContent[language].introduction,
+            }}
           />
         </Box>
 
         {/* Interests List */}
-        <InterestsList interests={interests} language={language} />
+        <InterestsList
+          interests={interests}
+          language={language}
+          personalInterestsContent={personalInterestsContent}
+        />
 
         {/* Photo Gallery */}
         <PhotoGallery
-          images={images}
+          personalPhotos={personalPhotos}
           language={language}
           handleOpenModal={handleOpenModal}
-          visibleImages={visibleImages}
-          handleViewMore={handleViewMore}
         />
 
         {/* Modal for Image */}

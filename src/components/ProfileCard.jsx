@@ -3,12 +3,11 @@ import { Box, Typography, Paper } from "@mui/material";
 import {
   Edit as EditIcon,
   LocationOn as LocationIcon,
-  Star as StarIcon,
   Email as EmailIcon,
   Phone as PhoneIcon,
   Language as LanguageIcon,
 } from "@mui/icons-material";
-import profilePhoto from "../assets/profile-photo-2.jpg";
+import profilePhoto from "../assets/photos/profile-photo.jpg";
 import { useTheme } from "@mui/material/styles";
 
 function ProfileCard() {

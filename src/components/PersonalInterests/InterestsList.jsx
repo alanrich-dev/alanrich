@@ -1,9 +1,8 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
-import content from "../../assets/content";
 import { useTheme } from "@mui/material/styles";
 
-const InterestsList = ({ interests, language }) => {
+const InterestsList = ({ interests, language, personalInterestsContent }) => {
   const theme = useTheme();
 
   return (
@@ -17,7 +16,7 @@ const InterestsList = ({ interests, language }) => {
           color: theme.palette.primary.main,
         }}
       >
-        {content[language].interestsTitle}
+        {personalInterestsContent[language].interestsTitle}
       </Typography>
       <ul>
         {interests.map((interest, index) => {

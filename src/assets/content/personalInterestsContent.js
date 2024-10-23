@@ -1,4 +1,4 @@
-const content = {
+const personalInterestsContent = {
   en: {
     heading: "How I spend my free time",
     subheading: "Personal Interests",
@@ -48,4 +48,4 @@ const content = {
   },
 };
 
-export default content;
+export default personalInterestsContent;

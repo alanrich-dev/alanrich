@@ -2,11 +2,11 @@ import React from "react";
 import { Typography, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Slider from "react-slick";
-import content from "../../assets/content";
+import personalInterestsContent from "../../assets/content/personalInterestsContent";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const PhotoGallery = ({ images, language, handleOpenModal }) => {
+const PhotoGallery = ({ personalPhotos, language, handleOpenModal }) => {
   const theme = useTheme();
 
   // Slider settings for react-slick
@@ -47,12 +47,12 @@ const PhotoGallery = ({ images, language, handleOpenModal }) => {
           color: theme.palette.primary.main,
         }}
       >
-        {content[language].photoGalleryTitle}
+        {personalInterestsContent[language].photoGalleryTitle}
       </Typography>
 
       {/* Slider carousel */}
       <Slider {...settings}>
-        {images.map((item, index) => (
+        {personalPhotos.map((item, index) => (
           <Box
             key={index}
             onClick={() => handleOpenModal(item)}
@@ -61,8 +61,8 @@ const PhotoGallery = ({ images, language, handleOpenModal }) => {
               padding: "0 10px",
               display: "flex",
               justifyContent: "center",
-              alignItems: "center", // Vertically and horizontally center
-              height: "200px", // Set a fixed height for the image container
+              alignItems: "center",
+              height: "200px",
               boxSizing: "border-box",
             }}
           >
