@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
           flexGrow: 1,
           display: "flex",
           flexDirection: "column",
-          overflowY: isMobile ? "visible" : "auto", // Scrollable on desktop only
+          overflowY: isMobile ? "visible" : "auto",
           alignItems: "center",
         }}
       >
