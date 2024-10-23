@@ -1,22 +1,42 @@
 import React from "react";
-import {
-  Typography,
-  Box,
-  Button,
-  ImageList,
-  ImageListItem,
-} from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import Slider from "react-slick";
 import content from "../../assets/content";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const PhotoGallery = ({
-  images,
-  language,
-  handleOpenModal,
-  visibleImages,
-  handleViewMore,
-}) => {
+const PhotoGallery = ({ images, language, handleOpenModal }) => {
   const theme = useTheme();
+
+  // Slider settings for react-slick
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  };
+
   return (
     <Box mb={4}>
       <Typography
@@ -29,27 +49,51 @@ const PhotoGallery = ({
       >
         {content[language].photoGalleryTitle}
       </Typography>
-      <ImageList variant="masonry" cols={3} gap={8}>
-        {images.slice(0, visibleImages).map((item, index) => (
-          <ImageListItem
+
+      {/* Slider carousel */}
+      <Slider {...settings}>
+        {images.map((item, index) => (
+          <Box
             key={index}
             onClick={() => handleOpenModal(item)}
-            sx={{ cursor: "pointer" }}
+            sx={{
+              cursor: "pointer",
+              padding: "0 10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center", // Vertically and horizontally center
+              height: "200px", // Set a fixed height for the image container
+              boxSizing: "border-box",
+            }}
           >
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={language === "en" ? item.titleEn : item.titleFr}
-              loading="lazy"
-            />
-          </ImageListItem>
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                overflow: "hidden",
+                borderRadius: "8px",
+                backgroundColor: theme.palette.background.paper,
+              }}
+            >
+              <img
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt={language === "en" ? item.titleEn : item.titleFr}
+                loading="lazy"
+                style={{
+                  maxHeight: "100%",
+                  maxWidth: "100%",
+                  objectFit: "contain",
+                  borderRadius: "8px",
+                }}
+              />
+            </Box>
+          </Box>
         ))}
-      </ImageList>
-      {visibleImages < images.length && (
-        <Button onClick={handleViewMore} variant="contained" sx={{ mt: 2 }}>
-          View More Images
-        </Button>
-      )}
+      </Slider>
     </Box>
   );
 };

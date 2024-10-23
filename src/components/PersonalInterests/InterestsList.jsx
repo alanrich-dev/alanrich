@@ -1,8 +1,11 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
 import content from "../../assets/content";
+import { useTheme } from "@mui/material/styles";
 
 const InterestsList = ({ interests, language }) => {
+  const theme = useTheme();
+
   return (
     <Box mb={4}>
       <Typography
@@ -11,7 +14,7 @@ const InterestsList = ({ interests, language }) => {
         gutterBottom
         sx={{
           textTransform: "uppercase",
-          color: (theme) => theme.palette.primary.main,
+          color: theme.palette.primary.main,
         }}
       >
         {content[language].interestsTitle}
@@ -24,7 +27,11 @@ const InterestsList = ({ interests, language }) => {
               <Typography
                 variant="body1"
                 component="span"
-                sx={{ fontWeight: "bold", lineHeight: 1.8 }}
+                sx={{
+                  fontWeight: "bold",
+                  lineHeight: 1.8,
+                  color: theme.palette.primary.main,
+                }}
               >
                 {bold}
               </Typography>
@@ -37,7 +44,15 @@ const InterestsList = ({ interests, language }) => {
                   <i>Un Gars, une fille</i>.
                 </>
               ) : (
-                normal
+                <Typography
+                  variant="body1"
+                  component="span"
+                  sx={{
+                    color: theme.palette.grey[700],
+                  }}
+                >
+                  {normal}
+                </Typography>
               )}
             </li>
           );
