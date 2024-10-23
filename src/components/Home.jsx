@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Typography, Box, Button } from "@mui/material";
 import Layout from "./Layout";
 import { englishText, frenchText } from "../assets/content/homePage";
+import Microlink from "@microlink/react";
 
 function Home() {
   const [language, setLanguage] = useState("en");
@@ -37,6 +38,7 @@ function Home() {
         <Button variant="contained" onClick={handleToggleLanguage}>
           {language === "en" ? "Traduire en français" : "Translate to English"}
         </Button>
+        <Microlink url="https://www.decouvrirpatrimoine.fr" />
       </Box>
     </Layout>
   );
