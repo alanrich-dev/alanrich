@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e270f083.css",
-    "main.js": "/static/js/main.a0f65869.js",
+    "main.js": "/static/js/main.c1b84ad2.js",
     "static/media/Szimpla-Kert.jpg": "/static/media/Szimpla-Kert.967422cd6bab35bf5562.jpg",
     "static/media/Murren-1.jpg": "/static/media/Murren-1.1e63b81a9e1179e4e8eb.jpg",
     "static/media/Herculaneum-2.jpg": "/static/media/Herculaneum-2.d1d827124900e8c2f0de.jpg",
@@ -17,7 +17,7 @@
     "static/media/Lofoten-9.jpg": "/static/media/Lofoten-9.8ba72fd9e0116d886b21.jpg",
     "static/media/Reading-In-The-Alps.jpg": "/static/media/Reading-In-The-Alps.6abb06bf5d36092e0e63.jpg",
     "static/media/kvalvika-beach-2.jpg": "/static/media/kvalvika-beach-2.4fd04f780afeeaf16468.jpg",
-    "static/media/profile-photo-2.jpg": "/static/media/profile-photo-2.c77851a07158372d89b0.jpg",
+    "static/media/profile-photo.jpg": "/static/media/profile-photo.c77851a07158372d89b0.jpg",
     "static/media/Lofoten-8.jpg": "/static/media/Lofoten-8.78d463dfb4e3a02e9be7.jpg",
     "static/media/kvalvika-beach.jpg": "/static/media/kvalvika-beach.2ebf9edfaebf97a18d58.jpg",
     "static/media/andalsnes-1.jpg": "/static/media/andalsnes-1.6b02c55142257c716e24.jpg",
@@ -72,10 +72,10 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.e270f083.css.map": "/static/css/main.e270f083.css.map",
-    "main.a0f65869.js.map": "/static/js/main.a0f65869.js.map"
+    "main.c1b84ad2.js.map": "/static/js/main.c1b84ad2.js.map"
   },
   "entrypoints": [
     "static/css/main.e270f083.css",
-    "static/js/main.a0f65869.js"
+    "static/js/main.c1b84ad2.js"
   ]
 }
