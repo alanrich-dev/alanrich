@@ -40,12 +40,18 @@ const InterestsList = ({
               </Typography>
               ,{" "}
               {normal.includes("Un Gars") ? (
-                <>
+                <Typography
+                  variant="body1"
+                  component="span"
+                  sx={{
+                    color: theme.palette.grey[700],
+                  }}
+                >
                   {language === "en"
                     ? "currently addicted to"
                     : "actuellement accro à"}{" "}
                   <i>Un Gars, une fille</i>.
-                </>
+                </Typography>
               ) : (
                 <Typography
                   variant="body1"
