@@ -99,7 +99,7 @@ function Home() {
                   variant="h4"
                   component="h1"
                   gutterBottom
-                  sx={{ color: theme.palette.primary.main }}
+                  sx={{ color: theme.palette.primary.main, pb: 1 }}
                 >
                   {workSampleContent.title}
                 </Typography>
