@@ -34,11 +34,11 @@ export const frenchText = {
 export const workSampleEn = {
   title: "Work Sample",
   description:
-    "Please have patience with the inital load time, I'm using eco dynoms on Heroku. ",
+    "Please have patience with the inital load time, I'm using eco dynos on Heroku. ",
 };
 
 export const workSampleFr = {
   title: "Exemple de Projet",
   description:
-    "Veuillez patienter pendant le chargement initial, Heroku utilise des dynos économiques.",
+    "Veuillez patienter pendant le chargement initial, Heroku utilise des eco dynos.",
 };

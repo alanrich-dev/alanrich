@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Typography, Box, Card, CardContent } from "@mui/material";
-import Layout from "./Layout";
+import Layout from "../ReuseableComponents/Layout";
 import {
   englishText,
   frenchText,
   workSampleEn,
   workSampleFr,
-} from "../assets/content/homePage";
-import TranslationButton from "./TranslationButton";
+} from "../../assets/content/homePage";
+import TranslationButton from "../ReuseableComponents/TranslationButton";
 import Microlink from "@microlink/react";
 import { useTheme } from "@mui/material/styles";
 

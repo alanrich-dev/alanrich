@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Timeline from "./Timeline";
-import Layout from "./Layout";
+import Timeline from "../ReuseableComponents/Timeline";
+import Layout from "../ReuseableComponents/Layout";
 import { Box } from "@mui/material";
 import {
   workExperienceItemsEn,
   workExperienceItemsFr,
-} from "../assets/content/workExperienceItems";
-import TranslationButton from "./TranslationButton";
+} from "../../assets/content/workExperienceItems";
+import TranslationButton from "../ReuseableComponents/TranslationButton";
 
 function Experience() {
   const [language, setLanguage] = useState("en");

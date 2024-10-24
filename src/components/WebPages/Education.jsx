@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Layout from "./Layout";
-import Timeline from "./Timeline";
+import Layout from "../ReuseableComponents/Layout";
+import Timeline from "../ReuseableComponents/Timeline";
 import {
   universitiesAttended,
   academicConferences,
-} from "../assets/content/education";
+} from "../../assets/content/education";
 
 function Education() {
   return (

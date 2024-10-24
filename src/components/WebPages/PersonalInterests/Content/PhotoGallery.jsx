@@ -1,8 +1,8 @@
 import React from "react";
-import { Typography, Box, Card, CardContent } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Slider from "react-slick";
-import personalInterestsContent from "../../assets/content/personalInterestsContent";
+import personalInterestsContent from "../../../../assets/content/personalInterestsContent";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

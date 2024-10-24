@@ -8,11 +8,11 @@ import {
   CardContent,
 } from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
-import Layout from "../Layout";
-import InterestsList from "./InterestsList";
-import Recommendations from "./Recommendations";
-import PhotoGallery from "./PhotoGallery";
-import TranslationButton from "../TranslationButton";
+import Layout from "../../ReuseableComponents/Layout";
+import InterestsList from "./Content/InterestsList";
+import Recommendations from "./Content/Recommendations";
+import PhotoGallery from "./Content/PhotoGallery";
+import TranslationButton from "../../ReuseableComponents/TranslationButton";
 
 function PersonalInterests({
   theme,

@@ -7,7 +7,7 @@ import {
   Phone as PhoneIcon,
   Language as LanguageIcon,
 } from "@mui/icons-material";
-import profilePhoto from "../assets/photos/profile-photo.jpg";
+import profilePhoto from "../../assets/photos/profile-photo.jpg";
 import { useTheme } from "@mui/material/styles";
 
 function ProfileCard() {

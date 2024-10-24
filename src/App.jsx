@@ -4,10 +4,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import theme from "./theme";
 import NavbarWrapper from "./components/Navbar/NavbarWrapper";
-import Home from "./components/Home";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import PersonalInterestsWrapper from "./components/PersonalInterests/PersonalInterestsWrapper";
+import Home from "./components/WebPages/Home";
+import Education from "./components/WebPages/Education";
+import Experience from "./components/WebPages/Experience";
+import PersonalInterestsWrapper from "./components/WebPages/PersonalInterests/PersonalInterestsWrapper";
 
 function App() {
   return (

@@ -11,7 +11,7 @@ import {
   CardContent,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import personalInterestsContent from "../../assets/content/personalInterestsContent";
+import personalInterestsContent from "../../../../assets/content/personalInterestsContent";
 
 const Recommendations = ({ recommendations, language }) => {
   const theme = useTheme();
