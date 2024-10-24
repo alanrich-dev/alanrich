@@ -43,13 +43,11 @@ const personalInterestsItemized = [
   {
     en: {
       bold: "French Philosophy",
-      normal:
-        "I'm a Rousseauiste, and I think his work is astongishly prescient.",
+      normal: "I'm a Rousseauiste, his work is astongishly prescient.",
     },
     fr: {
       bold: "Philosophie Française",
-      normal:
-        "je suis un Rousseauiste, son travail est étonnamment prémonitoire.",
+      normal: "je suis un Rousseauiste, son travail est prémonitoire.",
     },
   },
   {
@@ -81,8 +79,7 @@ const personalInterestsItemized = [
     },
     fr: {
       bold: "Art Néoclassique",
-      normal:
-        "Jacques-Louis David est mon artiste préféré de l'après-Renaissance.",
+      normal: "Jacques-Louis David est mon artiste préféré.",
     },
   },
   {
