@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e270f083.css",
-    "main.js": "/static/js/main.796eee91.js",
+    "main.js": "/static/js/main.bcc9e55d.js",
     "static/media/Szimpla-Kert.jpg": "/static/media/Szimpla-Kert.967422cd6bab35bf5562.jpg",
     "static/media/Murren-1.jpg": "/static/media/Murren-1.1e63b81a9e1179e4e8eb.jpg",
     "static/media/Herculaneum-2.jpg": "/static/media/Herculaneum-2.d1d827124900e8c2f0de.jpg",
@@ -72,10 +72,10 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.e270f083.css.map": "/static/css/main.e270f083.css.map",
-    "main.796eee91.js.map": "/static/js/main.796eee91.js.map"
+    "main.bcc9e55d.js.map": "/static/js/main.bcc9e55d.js.map"
   },
   "entrypoints": [
     "static/css/main.e270f083.css",
-    "static/js/main.796eee91.js"
+    "static/js/main.bcc9e55d.js"
   ]
 }
