@@ -1,24 +1,3 @@
-/*import React from "react";
-import { Button, Box } from "@mui/material";
-
-const TranslationButton = ({ language, handleToggleLanguage }) => {
-  return (
-    <Box
-      sx={{
-        position: "absolute",
-        top: 0,
-        right: 0,
-      }}
-    >
-      <Button variant="contained" onClick={handleToggleLanguage}>
-        {language === "en" ? "Traduire en Français" : "Translate to English"}
-      </Button>
-    </Box>
-  );
-};
-
-export default TranslationButton;
-*/
 import React from "react";
 import { Button, Box } from "@mui/material";
 
