@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid } from "@mui/material";
+import { Typography, Grid, Card, CardContent } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 function Timeline({ heading, subheading, items }) {
@@ -68,20 +68,35 @@ function Timeline({ heading, subheading, items }) {
             <Grid item xs={12} md={9}>
               <Grid container spacing={2}>
                 <Grid item>
-                  <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-                    {item.title}
-                  </Typography>
-                  {item.subtitle && (
-                    <Typography variant="subtitle1">{item.subtitle}</Typography>
-                  )}
-                  {item.description && (
-                    <Typography
-                      variant="body1"
-                      sx={{ color: theme.palette.text.secondary }}
-                    >
-                      {item.description}
-                    </Typography>
-                  )}
+                  <Card
+                    sx={{
+                      boxShadow: 3,
+                      borderRadius: "16px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      backgroundColor: "#f5f5f5",
+                    }}
+                  >
+                    <CardContent>
+                      <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+                        {item.title}
+                      </Typography>
+                      {item.subtitle && (
+                        <Typography variant="subtitle1">
+                          {item.subtitle}
+                        </Typography>
+                      )}
+                      {item.description && (
+                        <Typography
+                          variant="body1"
+                          sx={{ color: theme.palette.text.secondary }}
+                        >
+                          {item.description}
+                        </Typography>
+                      )}
+                    </CardContent>
+                  </Card>
                 </Grid>
               </Grid>
             </Grid>

@@ -1,5 +1,12 @@
 import React from "react";
-import { Typography, Box, Modal, IconButton } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Modal,
+  IconButton,
+  Card,
+  CardContent,
+} from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
 import Layout from "../Layout";
 import InterestsList from "./InterestsList";
@@ -63,14 +70,32 @@ function PersonalInterests({
 
         {/* Introduction Text */}
         <Box mb={4}>
-          <Typography
-            variant="body1"
-            paragraph
-            sx={{ color: theme.palette.grey[700] }}
-            dangerouslySetInnerHTML={{
-              __html: personalInterestsContent[language].introduction,
+          <Card
+            sx={{
+              boxShadow: 3,
+              borderRadius: "16px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              minHeight: "300px",
+              backgroundColor: "#f5f5f5",
             }}
-          />
+          >
+            <CardContent
+              sx={{
+                pt: 0,
+                pb: 0,
+              }}
+            >
+              <Typography
+                variant="body1"
+                sx={{ color: theme.palette.grey[700] }}
+                dangerouslySetInnerHTML={{
+                  __html: personalInterestsContent[language].introduction,
+                }}
+              />
+            </CardContent>
+          </Card>
         </Box>
 
         {/* Interests List */}

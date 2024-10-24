@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Card, CardContent } from "@mui/material";
 import Layout from "./Layout";
 import {
   englishText,
@@ -21,6 +21,8 @@ function Home() {
 
   const introductionContent = language === "en" ? englishText : frenchText;
   const workSampleContent = language === "en" ? workSampleEn : workSampleFr;
+
+  const url = "https://www.decouvrirpatrimoine.fr";
 
   return (
     <Layout>
@@ -47,49 +49,100 @@ function Home() {
           <Typography variant="h2" component="h2" color="primary" gutterBottom>
             {introductionContent.name}
           </Typography>
-          <Typography
-            variant="body1"
-            paragraph
+          <Card
             sx={{
-              paddingBottom: 2,
-              color: theme.palette.grey[700],
+              boxShadow: 3,
+              borderRadius: "16px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: "#f5f5f5",
+              pb: 0,
             }}
-            dangerouslySetInnerHTML={{
-              __html: introductionContent.description,
-            }}
-          />
+          >
+            <CardContent>
+              <Typography
+                variant="body1"
+                paragraph
+                sx={{
+                  color: theme.palette.grey[700],
+                }}
+                dangerouslySetInnerHTML={{
+                  __html: introductionContent.description,
+                }}
+              />
+            </CardContent>
+          </Card>
 
-          <Box>
-            <Typography variant="h4" component="h1" gutterBottom sx={{ pt: 4 }}>
-              {workSampleContent.title}
-            </Typography>
-            <Microlink
-              url="https://www.decouvrirpatrimoine.fr"
-              size="large"
-              setData={(data) => ({
-                ...data,
-                title:
-                  "Découvrir Patrimoine | Explorez le Patrimoine Culturel Français",
-                description:
-                  "Explorez et visualez le patrimoine culturel français avec les données officielles du Ministère de la Culture. Cartes interactives, tableaux de synthèse, et plus encore.",
-                image: {
-                  url: "https://www.decouvrirpatrimoine.fr/images/dashboard.png",
-                },
-                url: "http://www.decouvrirpatrimoine.fr",
-              })}
-            />
-            <Typography
-              variant="body1"
-              paragraph
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <Card
               sx={{
-                color: theme.palette.grey[700],
-                pt: 2,
+                mt: 4,
+                boxShadow: 3,
+                borderRadius: "16px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "300px",
+                textAlign: "center",
+                backgroundColor: "#f5f5f5",
+                cursor: "pointer",
               }}
-              dangerouslySetInnerHTML={{
-                __html: workSampleContent.description,
-              }}
-            />
-          </Box>
+            >
+              <CardContent>
+                <Typography
+                  variant="h4"
+                  component="h1"
+                  gutterBottom
+                  sx={{ color: theme.palette.primary.main }}
+                >
+                  {workSampleContent.title}
+                </Typography>
+
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%",
+                    mb: 2,
+                  }}
+                >
+                  <Microlink
+                    url={url}
+                    size="large"
+                    setData={(data) => ({
+                      ...data,
+                      title:
+                        "Découvrir Patrimoine | Explorez le Patrimoine Culturel Français",
+                      description:
+                        "Explorez et visualez le patrimoine culturel français avec les données officielles du Ministère de la Culture. Cartes interactives, tableaux de synthèse, et plus encore.",
+                      image: {
+                        url: "https://www.decouvrirpatrimoine.fr/images/dashboard.png",
+                      },
+                      url: "http://www.decouvrirpatrimoine.fr",
+                    })}
+                  />
+                </Box>
+
+                <Typography
+                  variant="body1"
+                  paragraph
+                  sx={{
+                    color: theme.palette.grey[700],
+                    pt: 1,
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: workSampleContent.description,
+                  }}
+                />
+              </CardContent>
+            </Card>
+          </a>
         </Box>
       </Box>
     </Layout>

@@ -40,5 +40,5 @@ export const workSampleEn = {
 export const workSampleFr = {
   title: "Exemple de Projet",
   description:
-    "Veuillez patienter lors du temps de chargement initial, j'utilise des eco dynos sur Heroku.",
+    "Veuillez patienter pendant le chargement initial, Heroku utilise des dynos économiques.",
 };
