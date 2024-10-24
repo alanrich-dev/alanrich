@@ -58,51 +58,99 @@ function ProfileCard() {
           flexGrow: "1",
         }}
       >
+        {/* General Information text */}
         <Typography variant="h7">General Information</Typography>
-
-        <Box display="flex" alignItems="center" gap="8px">
+        <Box
+          sx={{
+            backgroundColor: "#7F00FF",
+            borderRadius: "32px",
+            p: 1,
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <EditIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
-            Name:{" "}
-            <Typography
-              component="span"
-              sx={{ color: theme.palette.common.white }}
-            >
-              Alan Rich
-            </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: theme.palette.common.white, fontWeight: "bold" }}
+          >
+            Name: Alan Rich
           </Typography>
         </Box>
 
-        <Box display="flex" alignItems="center" gap="8px">
+        <Box
+          sx={{
+            backgroundColor: "#7F00FF",
+            borderRadius: "32px",
+            p: 1,
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <LocationIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
-            Location:{" "}
-            <Typography
-              component="span"
-              sx={{ color: theme.palette.common.white }}
-            >
-              Toulouse, France
-            </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: theme.palette.common.white, fontWeight: "bold" }}
+          >
+            Location: Toulouse, France
           </Typography>
         </Box>
 
-        <Box display="flex" alignItems="center" gap="8px">
+        <Box
+          sx={{
+            backgroundColor: "#7F00FF",
+            borderRadius: "32px",
+            p: 1,
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <EmailIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
+          <Typography
+            variant="body2"
+            sx={{ color: theme.palette.common.white, fontWeight: "bold" }}
+          >
             rich.alan@proton.me
           </Typography>
         </Box>
 
-        <Box display="flex" alignItems="center" gap="8px">
+        <Box
+          sx={{
+            backgroundColor: "#7F00FF",
+            borderRadius: "32px",
+            p: 1, // Reduced padding
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <PhoneIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
+          <Typography
+            variant="body2"
+            sx={{ color: theme.palette.common.white, fontWeight: "bold" }}
+          >
             07 45 64 16 17
           </Typography>
         </Box>
 
-        <Box display="flex" alignItems="center" gap="8px">
+        <Box
+          sx={{
+            backgroundColor: "#7F00FF",
+            borderRadius: "32px",
+            p: 1,
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <LanguageIcon sx={{ color: theme.palette.icon.main }} />
-          <Typography variant="body2" sx={{ color: theme.palette.icon.main }}>
+          <Typography
+            variant="body2"
+            sx={{ color: theme.palette.common.white, fontWeight: "bold" }}
+          >
             <a
               href="https://www.decouvrirpatrimoine.fr"
               target="_blank"
@@ -112,7 +160,7 @@ function ProfileCard() {
                 textDecoration: "none",
               }}
             >
-              DecouvrirPatrimoine.fr
+              www.DecouvrirPatrimoine.fr
             </a>
           </Typography>
         </Box>
