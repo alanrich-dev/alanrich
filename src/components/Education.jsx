@@ -1,4 +1,5 @@
 import React from "react";
+import { Box } from "@mui/material";
 import Layout from "./Layout";
 import Timeline from "./Timeline";
 import {
@@ -9,19 +10,26 @@ import {
 function Education() {
   return (
     <Layout>
-      {/* Education Section */}
-      <Timeline
-        heading="What I've studied"
-        subheading="My Education"
-        items={universitiesAttended}
-      />
+      <Box
+        sx={{
+          position: "relative",
+          paddingTop: { xs: 2, sm: 4, md: 6 },
+        }}
+      >
+        {/* Education Section */}
+        <Timeline
+          heading="What I've studied"
+          subheading="My Education"
+          items={universitiesAttended}
+        />
 
-      {/* Academic Contributions Section */}
-      <Timeline
-        subheading=" Academic Contributions"
-        heading="Peer-Reviewed and Invited Presentations"
-        items={academicConferences}
-      />
+        {/* Academic Contributions Section */}
+        <Timeline
+          subheading=" Academic Contributions"
+          heading="Peer-Reviewed and Invited Presentations"
+          items={academicConferences}
+        />
+      </Box>
     </Layout>
   );
 }

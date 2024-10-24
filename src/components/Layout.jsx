@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
           marginLeft: { xs: 0, md: "25%" }, // Only apply margin on larger screens when ProfileCard is on the left
           height: isMobile ? "auto" : `calc(100vh - ${navbarHeight}px)`,
           backgroundColor: theme.palette.background.default,
-          paddingTop: { xs: 2, sm: 6, md: 8 },
+          paddingTop: { xs: 2, sm: 6, md: 6 },
           paddingBottom: { xs: 4, sm: 6, md: 8 },
           px: { xs: 4, sm: 4, md: 6, lg: 8 },
           flexGrow: 1,

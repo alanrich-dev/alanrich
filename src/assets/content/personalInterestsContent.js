@@ -11,7 +11,7 @@ const personalInterestsContent = {
 </p>
 
 <p>
-  When I returned to France, I was inspired to merge my love of culture with my passion for coding. This inspiration led me to create <a href="https://www.decouvrirpatrimoine.fr" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Decouvrirpatrimoine.fr</a>, a website designed to make government data on French heritage more accessible and engaging. Although it is still a work in progress, it remains my passion project.
+  When I returned to France, I was inspired to merge my love of culture with my passion for coding. This inspiration led me to create <a href="https://www.decouvrirpatrimoine.fr" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">www.DecouvrirPatrimoine.fr</a>, a website designed to make government data on French heritage more accessible and engaging. Although it is still a work in progress, it remains my passion project.
 </p>
 
 <p>
@@ -35,7 +35,7 @@ const personalInterestsContent = {
 </p>
 
 <p>
-  À mon retour en France, j'ai été inspiré pour fusionner mon amour de la culture avec ma passion pour le codage. Cette inspiration m'a conduit à créer <a href="https://www.decouvrirpatrimoine.fr" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Decouvrirpatrimoine.fr</a>, un site web conçu pour rendre les données gouvernementales sur le patrimoine français plus accessibles et attrayantes. Bien qu'il soit encore en cours de développement, il demeure mon projet passion.
+  À mon retour en France, j'ai été inspiré pour fusionner mon amour de la culture avec ma passion pour le codage. Cette inspiration m'a conduit à créer <a href="https://www.decouvrirpatrimoine.fr" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">www.DecouvrirPatrimoine.fr</a>, un site web conçu pour rendre les données gouvernementales sur le patrimoine français plus accessibles et attrayantes. Bien qu'il soit encore en cours de développement, il demeure mon projet passion.
 </p>
 
 <p>

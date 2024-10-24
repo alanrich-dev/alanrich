@@ -94,6 +94,13 @@ const theme = createTheme({
           fontWeight: "bold",
           padding: "12px 24px",
           textTransform: "uppercase",
+          borderRadius: "32px",
+          transition: "background 0.3s ease",
+          "&:hover": {
+            background:
+              "linear-gradient(90deg, #002654 33%, #FFFFFF 33%, #FFFFFF 66%, #EF4135 66%)",
+            color: "grey",
+          },
         },
       },
     },

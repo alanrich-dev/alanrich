@@ -1,10 +1,11 @@
 import React from "react";
-import { Typography, Box, Button, Modal, IconButton } from "@mui/material";
+import { Typography, Box, Modal, IconButton } from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
 import Layout from "../Layout";
 import InterestsList from "./InterestsList";
 import Recommendations from "./Recommendations";
 import PhotoGallery from "./PhotoGallery";
+import TranslationButton from "../TranslationButton";
 
 function PersonalInterests({
   theme,
@@ -25,21 +26,13 @@ function PersonalInterests({
       <Box
         sx={{
           position: "relative",
-          paddingTop: { xs: 8, sm: 10, md: 12 },
-          paddingBottom: { xs: 4, sm: 6, md: 8 },
+          paddingTop: { xs: 2, sm: 4, md: 6 },
         }}
       >
-        <Box sx={{ position: "absolute", top: 16, right: 16 }}>
-          <Button
-            variant="contained"
-            size="small"
-            onClick={handleToggleLanguage}
-          >
-            {language === "en"
-              ? "Traduire en français"
-              : "Translate to English"}
-          </Button>
-        </Box>
+        <TranslationButton
+          language={language}
+          handleToggleLanguage={handleToggleLanguage}
+        />
 
         {/* Heading and Subheading */}
         <Box mb={4}>
@@ -73,6 +66,7 @@ function PersonalInterests({
           <Typography
             variant="body1"
             paragraph
+            sx={{ color: theme.palette.grey[700] }}
             dangerouslySetInnerHTML={{
               __html: personalInterestsContent[language].introduction,
             }}
