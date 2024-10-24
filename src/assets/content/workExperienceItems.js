@@ -41,6 +41,13 @@ export const workExperienceItemsEn = [
     description:
       "As a chemist in Nestlé's confectionary division, my role involved ensuring product quality throughout the manufacturing process. I worked on formulating and testing chocolate recipes, analyzing raw materials, and conducting quality control checks to maintain consistency in taste, texture, and shelf life. Using techniques such as chromatography, spectroscopy, and titration, I performed chemical analyses to monitor ingredient composition and ensure compliance with FDA food safety standards. My work also included collaborating with production teams to troubleshoot issues, optimize formulations, and innovate new chocolate products.",
   },
+  {
+    date: "2009 - 2012",
+    title: "Diverse Experiences",
+    subtitle: "World Traveler",
+    description:
+      "Graduating in 2008 with a degree in Chemistry, during the height of the Great Recession, left me unable to find work in my field. I had to be resourceful, flexible, and creative to earn a living. Turning adversity into opportunity, I traveled the world, taking on various jobs, including working at a hostel in Budapest, selling carpets in Istanbul's Grand Bazaar, and bartending at a Canadian pub in the 6th arrondissement Paris. These experiences endowed me with self-reliance, a deep appreciation for cultural diversity, and an adventurous spirit. I became resilient and adaptable, learning to embrace adversity as a path to personal growth.",
+  },
 ];
 
 export const workExperienceItemsFr = [
@@ -85,5 +92,12 @@ export const workExperienceItemsFr = [
     subtitle: "Chimiste",
     description:
       "En tant que chimiste dans la division confiserie de Nestlé, mon rôle impliquait d'assurer la qualité des produits tout au long du processus de fabrication. J'ai travaillé sur la formulation et les tests de recettes de chocolat, analysant les matières premières et effectuant des contrôles de qualité pour maintenir la cohérence du goût, de la texture et de la durée de conservation. En utilisant des techniques telles que la chromatographie, la spectroscopie et la titration, j'ai réalisé des analyses chimiques pour surveiller la composition des ingrédients et assurer la conformité avec les normes de sécurité alimentaire de la FDA. Mon travail comprenait également la collaboration avec les équipes de production pour résoudre les problèmes, optimiser les formulations et innover de nouveaux produits chocolatés.",
+  },
+  {
+    date: "2009 - 2012",
+    title: "Expériences Diversifiées",
+    subtitle: "Voyageur du Monde",
+    description:
+      "Diplômé en 2008 avec un diplôme en chimie, en pleine Grande Récession, je n'ai pas pu trouver de travail dans mon domaine. J'ai dû faire preuve de débrouillardise, de flexibilité et de créativité pour gagner ma vie. Transformant l'adversité en opportunité, j'ai voyagé à travers le monde, acceptant divers emplois, notamment dans une auberge de jeunesse à Budapest, en vendant des tapis au Grand Bazar d'Istanbul, et en travaillant comme barman dans un pub canadien du 6ème arrondissement de Paris. Ces expériences m'ont inculqué l'autonomie, une grande appréciation de la diversité culturelle et un esprit aventureux. Je suis devenu résilient et adaptable, apprenant à embrasser l'adversité comme un chemin vers la croissance personnelle.",
   },
 ];
