@@ -94,7 +94,7 @@ function ProfileCard() {
             variant="body2"
             sx={{ color: theme.palette.common.white, fontWeight: "bold" }}
           >
-            Location: Toulouse, France
+            Location: Paris, France
           </Typography>
         </Box>
 

@@ -12,11 +12,7 @@ function NavbarWrapper() {
     { label: "About", path: "/" },
     { label: "Experience", path: "/experience" },
     { label: "Education", path: "/education" },
-    {
-      label: "Work Sample",
-      path: "https://www.decouvrirpatrimoine.fr",
-      external: true,
-    },
+    { label: "Portfolio", path: "/portfolio" },
     { label: "Github", path: "https://github.com/alanrich", external: true },
     { label: "Personal Interests", path: "/personal-interests" },
   ];

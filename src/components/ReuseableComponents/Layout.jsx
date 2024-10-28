@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           height: isMobile ? "auto" : `calc(100vh - ${navbarHeight}px)`,
           backgroundColor: theme.palette.background.default,
           paddingTop: { xs: 2, sm: 6, md: 6 },
-          paddingBottom: { xs: 4, sm: 6, md: 8 },
+          //paddingBottom: { xs: 2, sm: 2, md: 2 },
           px: { xs: 4, sm: 4, md: 6, lg: 8 },
           flexGrow: 1,
           display: "flex",
